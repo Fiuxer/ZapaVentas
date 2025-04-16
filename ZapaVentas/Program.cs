@@ -24,6 +24,8 @@ namespace ZapaVentas
         {
             public static string usr { get; set; }
             public static int privilege { get; set; }
+            public static string nombre_prod { get; set; }
+            public static int cant_prod { get; set; }
         }
     }
 }
