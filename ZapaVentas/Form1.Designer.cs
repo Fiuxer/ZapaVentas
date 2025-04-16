@@ -29,26 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_productos = new System.Windows.Forms.Button();
             this.btn_conteo = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.dgv_compra_actual = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1180, 750);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_ventas
             // 
@@ -69,6 +60,7 @@
             this.btn_productos.TabIndex = 2;
             this.btn_productos.Text = "Productos";
             this.btn_productos.UseVisualStyleBackColor = true;
+            this.btn_productos.Click += new System.EventHandler(this.btn_productos_Click);
             // 
             // btn_conteo
             // 
@@ -102,11 +94,45 @@
             this.btn_config.UseVisualStyleBackColor = true;
             this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
             // 
+            // btn_add
+            // 
+            this.btn_add.Location = new System.Drawing.Point(28, 139);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(205, 54);
+            this.btn_add.TabIndex = 7;
+            this.btn_add.Text = "Agregar producto";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // dgv_compra_actual
+            // 
+            this.dgv_compra_actual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_compra_actual.Location = new System.Drawing.Point(28, 199);
+            this.dgv_compra_actual.Name = "dgv_compra_actual";
+            this.dgv_compra_actual.RowHeadersWidth = 51;
+            this.dgv_compra_actual.RowTemplate.Height = 24;
+            this.dgv_compra_actual.Size = new System.Drawing.Size(1123, 435);
+            this.dgv_compra_actual.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1180, 750);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.dgv_compra_actual);
             this.Controls.Add(this.btn_config);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_conteo);
@@ -118,6 +144,7 @@
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -131,6 +158,8 @@
         private System.Windows.Forms.Button btn_conteo;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_config;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.DataGridView dgv_compra_actual;
     }
 }
 

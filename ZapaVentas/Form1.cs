@@ -48,5 +48,19 @@ namespace ZapaVentas
                 //this.Hide();
             }
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            add_prod add_Prod = new add_prod();
+            add_Prod.Show();
+            dgv_compra_actual.Refresh();
+        }
+
+        private void btn_productos_Click(object sender, EventArgs e)
+        {
+            product_editor product_Editor = new product_editor();
+            product_Editor.Show();
+            this.Hide();
+        }
     }
 }
