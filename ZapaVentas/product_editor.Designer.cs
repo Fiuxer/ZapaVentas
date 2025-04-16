@@ -39,7 +39,7 @@
             this.tbx_inv = new System.Windows.Forms.TextBox();
             this.btn_commit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbx_prod_id = new System.Windows.Forms.TextBox();
+            this.tbx_id_prod = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +74,7 @@
             this.dgv_productos.RowTemplate.Height = 24;
             this.dgv_productos.Size = new System.Drawing.Size(761, 477);
             this.dgv_productos.TabIndex = 2;
+            this.dgv_productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_CellContentClick);
             // 
             // lbl_no_encontrado
             // 
@@ -148,19 +149,19 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Id producto:";
             // 
-            // tbx_prod_id
+            // tbx_id_prod
             // 
-            this.tbx_prod_id.Location = new System.Drawing.Point(856, 327);
-            this.tbx_prod_id.Name = "tbx_prod_id";
-            this.tbx_prod_id.Size = new System.Drawing.Size(180, 22);
-            this.tbx_prod_id.TabIndex = 11;
+            this.tbx_id_prod.Location = new System.Drawing.Point(856, 327);
+            this.tbx_id_prod.Name = "tbx_id_prod";
+            this.tbx_id_prod.Size = new System.Drawing.Size(180, 22);
+            this.tbx_id_prod.TabIndex = 11;
             // 
             // product_editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 572);
-            this.Controls.Add(this.tbx_prod_id);
+            this.Controls.Add(this.tbx_id_prod);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_commit);
             this.Controls.Add(this.tbx_inv);
@@ -195,6 +196,6 @@
         private System.Windows.Forms.TextBox tbx_inv;
         private System.Windows.Forms.Button btn_commit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbx_prod_id;
+        private System.Windows.Forms.TextBox tbx_id_prod;
     }
 }

@@ -48,7 +48,7 @@
             this.btn_ventas.Name = "btn_ventas";
             this.btn_ventas.Size = new System.Drawing.Size(181, 82);
             this.btn_ventas.TabIndex = 1;
-            this.btn_ventas.Text = "Ventas";
+            this.btn_ventas.Text = "Acerca";
             this.btn_ventas.UseVisualStyleBackColor = true;
             // 
             // btn_productos

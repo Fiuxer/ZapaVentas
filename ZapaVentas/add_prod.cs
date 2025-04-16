@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using static ZapaVentas.Program;
 
 namespace ZapaVentas
 {
@@ -46,6 +47,27 @@ namespace ZapaVentas
             var productos = collection.Find(u => u.nombre.Contains(prod_name)).ToList();
 
             dgv_productos.DataSource = productos;
+        }
+
+        private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var selectedProduct = (producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
+
+                Global.nombre_prod = selectedProduct.nombre;
+
+                pnl_cantidad_envasado.Visible = selectedProduct.granel;
+                nud_cantidad.Focus();
+            }
+        }
+
+        private void numericUpDown1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) {
+                Global.cant_prod = (int)nud_cantidad.Value;
+                this.Close();
+            }
         }
     }
 }

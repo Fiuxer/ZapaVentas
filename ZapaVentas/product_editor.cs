@@ -67,7 +67,7 @@ namespace ZapaVentas
             {
                 tbx_precio.Text = productos[0].precio.ToString();
                 tbx_inv.Text = productos[0].inv.ToString();
-                tbx_prod_id.Text = productos[0].id_prod;
+                tbx_id_prod.Text = productos[0].id_prod;
                 cbx_granel.Checked = productos[0].granel;
                 return true;
             }
@@ -86,13 +86,15 @@ namespace ZapaVentas
             var database = client.GetDatabase("ZapaVentas");
             var collection = database.GetCollection<producto>("productos");
 
-            string id_prod = tbx_prod_id.Text.Trim();
+            string id_prod = tbx_id_prod.Text.Trim();
             string nombre = tbx_nombre.Text.Trim();
             double precio = Convert.ToDouble(tbx_precio.Text.Trim());
             bool granel = cbx_granel.Checked;
             int inv = Convert.ToInt32(tbx_inv.Text.Trim());
 
-            if (!reload_dgv())
+            var exists = collection.Find(u => u.nombre == nombre).Any();
+
+            if (!exists)
             {
 
                 var new_prod = new producto
@@ -118,11 +120,26 @@ namespace ZapaVentas
 
                 MessageBox.Show("Producto editado correctamente");
             }
+            reload_dgv();
         }
 
         private void product_editor_Load(object sender, EventArgs e)
         {
             reload_dgv();
+        }
+
+        private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > 0)
+            {
+                var selectedProduct = (producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
+                tbx_nombre.Text = selectedProduct.nombre;
+                tbx_inv.Text = selectedProduct.inv.ToString();
+                tbx_precio.Text = selectedProduct.precio.ToString();
+                cbx_granel.Checked = selectedProduct.granel;
+                tbx_id_prod.Text = selectedProduct.id_prod.ToString();
+            }
+
         }
     }
 }
