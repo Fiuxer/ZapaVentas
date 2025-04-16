@@ -17,19 +17,13 @@ namespace ZapaVentas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new log_in());
         }
 
-        class Global
+        public static class Global
         {
-            public MongoClient client;
-            public IMongoDatabase database;
-
-            public Global()
-            {
-                client = new MongoClient("mongodb://localhost:27017");
-                database = client.GetDatabase("ZapaVentas");
-            }
+            public static string usr { get; set; }
+            public static int privilege { get; set; }
         }
     }
 }

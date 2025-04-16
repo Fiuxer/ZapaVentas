@@ -35,7 +35,7 @@
             // 
             // tbx_usr
             // 
-            this.tbx_usr.Location = new System.Drawing.Point(321, 104);
+            this.tbx_usr.Location = new System.Drawing.Point(346, 138);
             this.tbx_usr.Name = "tbx_usr";
             this.tbx_usr.Size = new System.Drawing.Size(100, 22);
             this.tbx_usr.TabIndex = 0;
@@ -43,7 +43,7 @@
             // 
             // tbx_pwd
             // 
-            this.tbx_pwd.Location = new System.Drawing.Point(321, 132);
+            this.tbx_pwd.Location = new System.Drawing.Point(346, 166);
             this.tbx_pwd.Name = "tbx_pwd";
             this.tbx_pwd.PasswordChar = '*';
             this.tbx_pwd.Size = new System.Drawing.Size(100, 22);
@@ -51,7 +51,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(321, 207);
+            this.btn_login.Location = new System.Drawing.Point(346, 241);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(100, 38);
             this.btn_login.TabIndex = 2;
@@ -68,7 +68,9 @@
             this.Controls.Add(this.tbx_pwd);
             this.Controls.Add(this.tbx_usr);
             this.Name = "log_in";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "log_in";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.log_in_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

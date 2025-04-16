@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_ventas = new System.Windows.Forms.Button();
+            this.btn_productos = new System.Windows.Forms.Button();
+            this.btn_conteo = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -50,45 +50,46 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btn_ventas
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(358, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 82);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ventas";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_ventas.Location = new System.Drawing.Point(358, 19);
+            this.btn_ventas.Name = "btn_ventas";
+            this.btn_ventas.Size = new System.Drawing.Size(181, 82);
+            this.btn_ventas.TabIndex = 1;
+            this.btn_ventas.Text = "Ventas";
+            this.btn_ventas.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_productos
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(545, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 82);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Productos";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_productos.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_productos.Location = new System.Drawing.Point(545, 19);
+            this.btn_productos.Name = "btn_productos";
+            this.btn_productos.Size = new System.Drawing.Size(181, 82);
+            this.btn_productos.TabIndex = 2;
+            this.btn_productos.Text = "Productos";
+            this.btn_productos.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_conteo
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Location = new System.Drawing.Point(732, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 82);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Conteo";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_conteo.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_conteo.Location = new System.Drawing.Point(732, 19);
+            this.btn_conteo.Name = "btn_conteo";
+            this.btn_conteo.Size = new System.Drawing.Size(181, 82);
+            this.btn_conteo.TabIndex = 3;
+            this.btn_conteo.Text = "Conteo";
+            this.btn_conteo.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_exit
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Location = new System.Drawing.Point(1003, 19);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(149, 82);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Cerrar sesión";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_exit.Location = new System.Drawing.Point(1003, 19);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(149, 82);
+            this.btn_exit.TabIndex = 4;
+            this.btn_exit.Text = "Cerrar sesión";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_config
             // 
@@ -99,7 +100,7 @@
             this.btn_config.TabIndex = 5;
             this.btn_config.Text = "Config";
             this.btn_config.UseVisualStyleBackColor = true;
-            this.btn_config.Visible = false;
+            this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
             // 
             // Form1
             // 
@@ -107,13 +108,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
             this.Controls.Add(this.btn_config);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.btn_conteo);
+            this.Controls.Add(this.btn_productos);
+            this.Controls.Add(this.btn_ventas);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -122,10 +126,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_ventas;
+        private System.Windows.Forms.Button btn_productos;
+        private System.Windows.Forms.Button btn_conteo;
+        private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_config;
     }
 }
