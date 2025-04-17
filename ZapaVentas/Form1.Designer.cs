@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_productos = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.dgv_compra_actual = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tick = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +128,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // tick
+            // 
+            this.tick.Enabled = true;
+            this.tick.Interval = 1000;
+            this.tick.Tick += new System.EventHandler(this.tick_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,6 +168,7 @@
         private System.Windows.Forms.Button btn_config;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.DataGridView dgv_compra_actual;
+        private System.Windows.Forms.Timer tick;
     }
 }
 
