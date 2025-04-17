@@ -15,6 +15,9 @@ namespace ZapaVentas
 {
     public partial class add_prod : Form
     {
+        string nombre;
+        int cantidad;
+
         class producto
         {
             public ObjectId id { get; set; }
@@ -51,13 +54,17 @@ namespace ZapaVentas
 
         private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex < 0) return;
+
+
+            var selectedProduct = (producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
+
+            nombre = selectedProduct.nombre;
+            tbx_nombre.Text = selectedProduct.nombre;
+
+            if (!selectedProduct.granel)
             {
-                var selectedProduct = (producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
-
-                Global.nombre_prod = selectedProduct.nombre;
-
-                pnl_cantidad_envasado.Visible = selectedProduct.granel;
+                pnl_cantidad_envasado.Visible = true;
                 nud_cantidad.Focus();
             }
         }
@@ -65,9 +72,27 @@ namespace ZapaVentas
         private void numericUpDown1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) {
-                Global.cant_prod = (int)nud_cantidad.Value;
+                // AQUI EDITO LA COSA ESTA LA LA COSA ESA LA LA LA COSA YA SABES LA COSA ESTA
+                cantidad = (int)nud_cantidad.Value;
+
+                var compra = new Producto
+                {
+                    id_prod = nombre,
+                    nombre = nombre,
+                    precio = 0,
+                    granel = true,
+                    inv = cantidad
+                };
+
+                Global.productos.Add(compra);
+
                 this.Close();
             }
+        }
+
+        private void add_prod_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }

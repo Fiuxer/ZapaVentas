@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -61,6 +64,33 @@ namespace ZapaVentas
             product_editor product_Editor = new product_editor();
             product_Editor.Show();
             this.Hide();
+        }
+
+        private void tick_Tick(object sender, EventArgs e)
+        {
+            string connectionString = "mongodb://localhost:27017";
+            MongoClient client = new MongoClient(connectionString);
+            var database = client.GetDatabase("ZapaVentas");
+            var collection = database.GetCollection<Producto>("productos");
+
+            foreach (Producto producto in Global.productos)
+            {
+                var filter = Builders<Producto>.Filter.Eq(u => u.nombre, producto.nombre);
+
+                var result = collection.Find(filter).FirstOrDefault();
+
+                if (result != null)
+                {
+                    producto.precio = result.precio * producto.inv;
+                }
+
+            }
+
+            dgv_compra_actual.DataSource = null;
+            dgv_compra_actual.DataSource = Global.productos;
+            dgv_compra_actual.Columns["id"].Visible = false;
+            dgv_compra_actual.Columns["granel"].Visible = false;
+            dgv_compra_actual.Columns["inv"].Name = "Cantidad";
         }
     }
 }

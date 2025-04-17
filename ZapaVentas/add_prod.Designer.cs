@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_productos = new System.Windows.Forms.DataGridView();
             this.pnl_cantidad_envasado = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.nud_cantidad = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.pnl_cantidad_envasado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_cantidad)).BeginInit();
@@ -77,15 +77,6 @@
             this.pnl_cantidad_envasado.TabIndex = 3;
             this.pnl_cantidad_envasado.Visible = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Cantidad:";
-            // 
             // nud_cantidad
             // 
             this.nud_cantidad.Location = new System.Drawing.Point(209, 119);
@@ -109,6 +100,15 @@
             0});
             this.nud_cantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numericUpDown1_KeyPress);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(235, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Cantidad:";
+            // 
             // add_prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,6 +120,7 @@
             this.Controls.Add(this.tbx_nombre);
             this.Name = "add_prod";
             this.Text = "add_prod";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.add_prod_FormClosed);
             this.Load += new System.EventHandler(this.add_prod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();
             this.pnl_cantidad_envasado.ResumeLayout(false);
