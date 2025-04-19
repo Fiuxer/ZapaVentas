@@ -55,3 +55,4 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVen
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.csproj.Up2Date
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.add_prod.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.product_editor.resources
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.checkout.resources

@@ -19,6 +19,7 @@ namespace ZapaVentas
         {
             InitializeComponent();
         }
+        // Clase de usuario para que el programa sepa que datos buscar en mongoDB
         public class user
         {
             public ObjectId Id { get; set; }
@@ -26,21 +27,26 @@ namespace ZapaVentas
             public string pwd { get; set; }
             public int privilege { get; set; }
         }
+
         private void btn_login_Click(object sender, EventArgs e)
         {
+            // Conexión a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase("ZapaVentas");
             var collection = database.GetCollection<user>("usuarios");
 
+            // Buscar usuarios en los que el nombre y el usuario coincidan a
+            // los que el vendedor escribió con el uso de funciones lambda
             var filter = Builders<user>.Filter.Eq("usr", tbx_usr.Text) &
                             Builders<user>.Filter.Eq("pwd", tbx_pwd.Text);
 
+            // Si el usuario existe, se guarda en la variable usuarios
             var usuarios = collection.Find(filter).FirstOrDefault();
 
+            // Si el usuario si existe, entra a la sección de ventas
             if (usuarios != null)
             {
-                MessageBox.Show("Bienvenido " + tbx_usr.Text);
                 Global.usr = tbx_usr.Text;
                 Global.privilege = usuarios.privilege;
                 Form main = new Form1();
@@ -48,6 +54,7 @@ namespace ZapaVentas
                 this.Hide();
             } else
             {
+                // Si el usuario no existe, muestra un mensaje de datos incorrectos
                 MessageBox.Show("Usuario o contraseña incorrectos");
                 tbx_usr.Clear();
                 tbx_pwd.Clear();

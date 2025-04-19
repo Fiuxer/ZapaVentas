@@ -18,16 +18,6 @@ namespace ZapaVentas
         string nombre;
         int cantidad;
 
-        class producto
-        {
-            public ObjectId id { get; set; }
-            public string id_prod { get; set; }
-            public string nombre { get; set; }
-            public double precio { get; set; }
-            public bool granel { get; set; }
-            public int inv { get; set; }
-        }
-
         public add_prod()
         {
             InitializeComponent();
@@ -40,30 +30,49 @@ namespace ZapaVentas
 
         private void reload_dgv()
         {
+            // Conectar a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase("ZapaVentas");
-            var collection = database.GetCollection<producto>("productos");
+            var collection = database.GetCollection<Producto>("productos");
 
+            // Agarrar el nombre del producto
+            // .Trim() elimina espacios al principio y al final
             string prod_name = tbx_nombre.Text.Trim();
 
+            /* 
+             * Buscar el producto en una base de datos usando una función lambda
+             * 
+             * Una función lambda es un tipo de función "anónima"
+             * 
+             * Con esta se pueden hacer operaciones complejas como la comprobación de
+             * un nombre en una base de datos sin la necesidad de hacer un filtro
+             * completo.
+             */
             var productos = collection.Find(u => u.nombre.Contains(prod_name)).ToList();
 
+
+            //Mostrar los productos en el DataGridView
             dgv_productos.DataSource = productos;
         }
 
         private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Si el vendedor hace click en la parte de arriba del DataGridView (Los tipos de variables que se muestran
+            // en lugar del producto), no se hace nada y en lugar se regresa
             if (e.RowIndex < 0) return;
 
+            // Agarra el producto seleccionado
+            var selectedProduct = (Producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
 
-            var selectedProduct = (producto)dgv_productos.Rows[e.RowIndex].DataBoundItem;
-
+            // Busca el nombre del producto y lo muestra en pantalla
             nombre = selectedProduct.nombre;
             tbx_nombre.Text = selectedProduct.nombre;
 
+            // Checa si el producto es a granel o no para saber como venderlo
             if (!selectedProduct.granel)
             {
+                // Si el producto no es a granel, muestra el panel de cantidad
                 pnl_cantidad_envasado.Visible = true;
                 nud_cantidad.Focus();
             }
@@ -71,8 +80,8 @@ namespace ZapaVentas
 
         private void numericUpDown1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // Al presionar Enter, se guarda el producto en la lista de productos
             if (e.KeyChar == (char)Keys.Enter) {
-                // AQUI EDITO LA COSA ESTA LA LA COSA ESA LA LA LA COSA YA SABES LA COSA ESTA
                 cantidad = (int)nud_cantidad.Value;
 
                 var compra = new Producto
