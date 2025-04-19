@@ -39,6 +39,8 @@
             this.dgv_compra_actual = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tick = new System.Windows.Forms.Timer(this.components);
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.btn_cobrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -134,11 +136,33 @@
             this.tick.Interval = 1000;
             this.tick.Tick += new System.EventHandler(this.tick_Tick);
             // 
+            // lbl_total
+            // 
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lbl_total.Location = new System.Drawing.Point(912, 686);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(102, 39);
+            this.lbl_total.TabIndex = 8;
+            this.lbl_total.Text = "Total:";
+            // 
+            // btn_cobrar
+            // 
+            this.btn_cobrar.Location = new System.Drawing.Point(739, 680);
+            this.btn_cobrar.Name = "btn_cobrar";
+            this.btn_cobrar.Size = new System.Drawing.Size(157, 53);
+            this.btn_cobrar.TabIndex = 9;
+            this.btn_cobrar.Text = "Cobrar:";
+            this.btn_cobrar.UseVisualStyleBackColor = true;
+            this.btn_cobrar.Click += new System.EventHandler(this.btn_cobrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.btn_cobrar);
+            this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dgv_compra_actual);
             this.Controls.Add(this.btn_config);
@@ -155,6 +179,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -169,6 +194,8 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.DataGridView dgv_compra_actual;
         private System.Windows.Forms.Timer tick;
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Button btn_cobrar;
     }
 }
 

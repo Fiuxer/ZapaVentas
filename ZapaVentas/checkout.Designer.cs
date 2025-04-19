@@ -1,0 +1,182 @@
+﻿namespace ZapaVentas
+{
+    partial class checkout
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.btn_efectivo = new System.Windows.Forms.Button();
+            this.btn_tarjeta = new System.Windows.Forms.Button();
+            this.pnl_efectivo = new System.Windows.Forms.Panel();
+            this.lbl_total_efectivo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tbx_change = new System.Windows.Forms.TextBox();
+            this.nud_pago = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnl_efectivo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_pago)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lbl_total
+            // 
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbl_total.Location = new System.Drawing.Point(237, 114);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(151, 58);
+            this.lbl_total.TabIndex = 0;
+            this.lbl_total.Text = "Total:";
+            // 
+            // btn_efectivo
+            // 
+            this.btn_efectivo.Location = new System.Drawing.Point(247, 256);
+            this.btn_efectivo.Name = "btn_efectivo";
+            this.btn_efectivo.Size = new System.Drawing.Size(136, 68);
+            this.btn_efectivo.TabIndex = 1;
+            this.btn_efectivo.Text = "Efectivo";
+            this.btn_efectivo.UseVisualStyleBackColor = true;
+            this.btn_efectivo.Click += new System.EventHandler(this.btn_efectivo_Click);
+            // 
+            // btn_tarjeta
+            // 
+            this.btn_tarjeta.Location = new System.Drawing.Point(407, 256);
+            this.btn_tarjeta.Name = "btn_tarjeta";
+            this.btn_tarjeta.Size = new System.Drawing.Size(136, 68);
+            this.btn_tarjeta.TabIndex = 2;
+            this.btn_tarjeta.Text = "Tarjeta";
+            this.btn_tarjeta.UseVisualStyleBackColor = true;
+            // 
+            // pnl_efectivo
+            // 
+            this.pnl_efectivo.Controls.Add(this.lbl_total_efectivo);
+            this.pnl_efectivo.Controls.Add(this.button1);
+            this.pnl_efectivo.Controls.Add(this.tbx_change);
+            this.pnl_efectivo.Controls.Add(this.nud_pago);
+            this.pnl_efectivo.Controls.Add(this.label2);
+            this.pnl_efectivo.Controls.Add(this.label1);
+            this.pnl_efectivo.Location = new System.Drawing.Point(12, 12);
+            this.pnl_efectivo.Name = "pnl_efectivo";
+            this.pnl_efectivo.Size = new System.Drawing.Size(776, 426);
+            this.pnl_efectivo.TabIndex = 3;
+            this.pnl_efectivo.Visible = false;
+            // 
+            // lbl_total_efectivo
+            // 
+            this.lbl_total_efectivo.AutoSize = true;
+            this.lbl_total_efectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbl_total_efectivo.Location = new System.Drawing.Point(300, 81);
+            this.lbl_total_efectivo.Name = "lbl_total_efectivo";
+            this.lbl_total_efectivo.Size = new System.Drawing.Size(159, 58);
+            this.lbl_total_efectivo.TabIndex = 5;
+            this.lbl_total_efectivo.Text = "label3";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 277);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 57);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Cobrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tbx_change
+            // 
+            this.tbx_change.Location = new System.Drawing.Point(348, 225);
+            this.tbx_change.Name = "tbx_change";
+            this.tbx_change.ReadOnly = true;
+            this.tbx_change.Size = new System.Drawing.Size(120, 22);
+            this.tbx_change.TabIndex = 3;
+            // 
+            // nud_pago
+            // 
+            this.nud_pago.DecimalPlaces = 1;
+            this.nud_pago.Location = new System.Drawing.Point(348, 190);
+            this.nud_pago.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.nud_pago.Name = "nud_pago";
+            this.nud_pago.Size = new System.Drawing.Size(120, 22);
+            this.nud_pago.TabIndex = 2;
+            this.nud_pago.ThousandsSeparator = true;
+            this.nud_pago.ValueChanged += new System.EventHandler(this.nud_pago_ValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(285, 228);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Cambio:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(271, 192);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pagó con: ";
+            // 
+            // checkout
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_efectivo);
+            this.Controls.Add(this.btn_tarjeta);
+            this.Controls.Add(this.btn_efectivo);
+            this.Controls.Add(this.lbl_total);
+            this.Name = "checkout";
+            this.Text = "checkout";
+            this.Load += new System.EventHandler(this.checkout_Load);
+            this.pnl_efectivo.ResumeLayout(false);
+            this.pnl_efectivo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_pago)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Button btn_efectivo;
+        private System.Windows.Forms.Button btn_tarjeta;
+        private System.Windows.Forms.Panel pnl_efectivo;
+        private System.Windows.Forms.NumericUpDown nud_pago;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbx_change;
+        private System.Windows.Forms.Label lbl_total_efectivo;
+        private System.Windows.Forms.Button button1;
+    }
+}

@@ -15,7 +15,6 @@ namespace ZapaVentas
 {
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();
@@ -40,12 +39,15 @@ namespace ZapaVentas
 
         private void btn_config_Click(object sender, EventArgs e)
         {
+            // Revisa si el vendedor es administrador
             if (Global.privilege > 1)
             {
+                // Si no es administrador entonces le avisa al vendedor
                 MessageBox.Show("No tienes privilegios para acceder a esta sección");
             }
             else
             {
+                // Si es administrador, abre la sección de configuración
                 //Form config = new Config();
                 //config.Show();
                 //this.Hide();
@@ -68,29 +70,45 @@ namespace ZapaVentas
 
         private void tick_Tick(object sender, EventArgs e)
         {
+            //Conexión a la base de datos
             string connectionString = "mongodb://localhost:27017";
             MongoClient client = new MongoClient(connectionString);
             var database = client.GetDatabase("ZapaVentas");
             var collection = database.GetCollection<Producto>("productos");
+            Global.precioTotal = 0;
 
+            // Por cada producto en la lista de productos
             foreach (Producto producto in Global.productos)
             {
+                // Busca el producto en la base de datos
                 var filter = Builders<Producto>.Filter.Eq(u => u.nombre, producto.nombre);
 
                 var result = collection.Find(filter).FirstOrDefault();
 
+                // Si el producto existe, actualiza el precio
                 if (result != null)
                 {
                     producto.precio = result.precio * producto.inv;
+                    Global.precioTotal += producto.precio;
                 }
 
             }
 
+            // Elegir valores para mostrar
             dgv_compra_actual.DataSource = null;
             dgv_compra_actual.DataSource = Global.productos;
             dgv_compra_actual.Columns["id"].Visible = false;
             dgv_compra_actual.Columns["granel"].Visible = false;
             dgv_compra_actual.Columns["inv"].Name = "Cantidad";
+
+            // Mostrar el total en pantalla
+            lbl_total.Text = "$" + Global.precioTotal.ToString("0.00");
+        }
+
+        private void btn_cobrar_Click(object sender, EventArgs e)
+        {
+            checkout Checkout = new checkout();
+            Checkout.Show();
         }
     }
 }
