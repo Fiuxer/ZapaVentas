@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_total = new System.Windows.Forms.Label();
             this.btn_efectivo = new System.Windows.Forms.Button();
             this.btn_tarjeta = new System.Windows.Forms.Button();
@@ -38,8 +39,12 @@
             this.nud_pago = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnl_card = new System.Windows.Forms.Panel();
+            this.lbl_card = new System.Windows.Forms.Label();
+            this.tick = new System.Windows.Forms.Timer(this.components);
             this.pnl_efectivo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_pago)).BeginInit();
+            this.pnl_card.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_total
@@ -70,6 +75,7 @@
             this.btn_tarjeta.TabIndex = 2;
             this.btn_tarjeta.Text = "Tarjeta";
             this.btn_tarjeta.UseVisualStyleBackColor = true;
+            this.btn_tarjeta.Click += new System.EventHandler(this.btn_tarjeta_Click);
             // 
             // pnl_efectivo
             // 
@@ -100,7 +106,7 @@
             this.button1.Location = new System.Drawing.Point(312, 277);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 57);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Cobrar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -111,7 +117,8 @@
             this.tbx_change.Name = "tbx_change";
             this.tbx_change.ReadOnly = true;
             this.tbx_change.Size = new System.Drawing.Size(120, 22);
-            this.tbx_change.TabIndex = 3;
+            this.tbx_change.TabIndex = 10;
+            this.tbx_change.TabStop = false;
             // 
             // nud_pago
             // 
@@ -124,9 +131,10 @@
             0});
             this.nud_pago.Name = "nud_pago";
             this.nud_pago.Size = new System.Drawing.Size(120, 22);
-            this.nud_pago.TabIndex = 2;
+            this.nud_pago.TabIndex = 1;
             this.nud_pago.ThousandsSeparator = true;
             this.nud_pago.ValueChanged += new System.EventHandler(this.nud_pago_ValueChanged);
+            this.nud_pago.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nud_pago_KeyDown);
             // 
             // label2
             // 
@@ -146,11 +154,35 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Pagó con: ";
             // 
+            // pnl_card
+            // 
+            this.pnl_card.Controls.Add(this.lbl_card);
+            this.pnl_card.Location = new System.Drawing.Point(167, 81);
+            this.pnl_card.Name = "pnl_card";
+            this.pnl_card.Size = new System.Drawing.Size(455, 349);
+            this.pnl_card.TabIndex = 11;
+            this.pnl_card.Visible = false;
+            // 
+            // lbl_card
+            // 
+            this.lbl_card.AutoSize = true;
+            this.lbl_card.Location = new System.Drawing.Point(179, 160);
+            this.lbl_card.Name = "lbl_card";
+            this.lbl_card.Size = new System.Drawing.Size(91, 16);
+            this.lbl_card.TabIndex = 0;
+            this.lbl_card.Text = "Insertar tarjeta";
+            // 
+            // tick
+            // 
+            this.tick.Interval = 200;
+            this.tick.Tick += new System.EventHandler(this.tick_Tick);
+            // 
             // checkout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_card);
             this.Controls.Add(this.pnl_efectivo);
             this.Controls.Add(this.btn_tarjeta);
             this.Controls.Add(this.btn_efectivo);
@@ -161,6 +193,8 @@
             this.pnl_efectivo.ResumeLayout(false);
             this.pnl_efectivo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_pago)).EndInit();
+            this.pnl_card.ResumeLayout(false);
+            this.pnl_card.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +212,8 @@
         private System.Windows.Forms.TextBox tbx_change;
         private System.Windows.Forms.Label lbl_total_efectivo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnl_card;
+        private System.Windows.Forms.Label lbl_card;
+        private System.Windows.Forms.Timer tick;
     }
 }

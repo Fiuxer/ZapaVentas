@@ -17,6 +17,7 @@ namespace ZapaVentas
     {
         string nombre;
         int cantidad;
+        int inv;
 
         public add_prod()
         {
@@ -68,6 +69,7 @@ namespace ZapaVentas
             // Busca el nombre del producto y lo muestra en pantalla
             nombre = selectedProduct.nombre;
             tbx_nombre.Text = selectedProduct.nombre;
+            inv = selectedProduct.inv;
 
             // Checa si el producto es a granel o no para saber como venderlo
             if (!selectedProduct.granel)
@@ -84,18 +86,25 @@ namespace ZapaVentas
             if (e.KeyChar == (char)Keys.Enter) {
                 cantidad = (int)nud_cantidad.Value;
 
-                var compra = new Producto
+                if (inv >= cantidad)
                 {
-                    id_prod = nombre,
-                    nombre = nombre,
-                    precio = 0,
-                    granel = true,
-                    inv = cantidad
-                };
+                    var compra = new Producto
+                    {
+                        id_prod = nombre,
+                        nombre = nombre,
+                        precio = 0,
+                        granel = true,
+                        inv = cantidad
+                    };
 
-                Global.productos.Add(compra);
+                    Global.productos.Add(compra);
 
-                this.Close();
+                    this.Close();
+                } else
+                {
+                    MessageBox.Show("No hay inventario suficiente");
+                }
+
             }
         }
 
