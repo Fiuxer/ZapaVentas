@@ -152,7 +152,7 @@
             this.btn_cobrar.Name = "btn_cobrar";
             this.btn_cobrar.Size = new System.Drawing.Size(157, 53);
             this.btn_cobrar.TabIndex = 9;
-            this.btn_cobrar.Text = "Cobrar:";
+            this.btn_cobrar.Text = "Cobrar (F12):";
             this.btn_cobrar.UseVisualStyleBackColor = true;
             this.btn_cobrar.Click += new System.EventHandler(this.btn_cobrar_Click);
             // 
@@ -171,11 +171,13 @@
             this.Controls.Add(this.btn_productos);
             this.Controls.Add(this.btn_ventas);
             this.Controls.Add(this.pictureBox1);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

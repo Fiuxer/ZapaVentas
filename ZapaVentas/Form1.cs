@@ -110,5 +110,15 @@ namespace ZapaVentas
             checkout Checkout = new checkout();
             Checkout.Show();
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            //Si se pulsa la tecla F12, cobrar
+            if (e.KeyCode == Keys.F12)
+            {
+                checkout Checkout = new checkout();
+                Checkout.Show();
+            }
+        }
     }
 }
