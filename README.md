@@ -27,3 +27,6 @@ Después hacer 3 colecciones con los siguientes nombres:
 
 La aplicación se puede encargar del resto.
 
+## Extras
+
+Dentro del programa hay una carpeta llamada **Example database**. En esta está un ejemplo de una base de datos con pocos datos pero funcional. Solo hay que meterla en mongodb con los **nombres correctos**.

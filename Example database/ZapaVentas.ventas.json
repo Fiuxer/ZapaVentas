@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6805a4b910768b2683503e22"
+  },
+  "fecha": {
+    "$date": "2025-04-21T01:51:53.775Z"
+  },
+  "productos": [
+    {
+      "nombre": "leche",
+      "precio": 25,
+      "cant": 1
+    },
+    {
+      "nombre": "palomitas",
+      "precio": 27,
+      "cant": 1
+    }
+  ],
+  "usuario": "leonardo"
+}]

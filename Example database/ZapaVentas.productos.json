@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "67ffc62cd90eb65566485deb"
+  },
+  "id_prod": "PAPAS-SABRITAS-ORIGINALES",
+  "nombre": "papas",
+  "precio": 20,
+  "granel": false,
+  "inv": 27
+},
+{
+  "_id": {
+    "$oid": "67ffca1ea72c62838282d7fd"
+  },
+  "id_prod": "COCACOLA-600ML",
+  "nombre": "coca",
+  "precio": 20,
+  "granel": false,
+  "inv": 18
+},
+{
+  "_id": {
+    "$oid": "67ffd39bf9320e2fe737bacb"
+  },
+  "id_prod": "LECHE-ALPURA",
+  "nombre": "leche",
+  "precio": 25,
+  "granel": false,
+  "inv": 26
+},
+{
+  "_id": {
+    "$oid": "67ffd844ef60dc84897c251b"
+  },
+  "id_prod": "PALOMITAS-EM",
+  "nombre": "palomitas",
+  "precio": 27,
+  "granel": false,
+  "inv": 26
+},
+{
+  "_id": {
+    "$oid": "680004f42a003a27b8999079"
+  },
+  "id_prod": "MANZANA-ROJA",
+  "nombre": "manzana",
+  "precio": 15,
+  "granel": true,
+  "inv": 28
+},
+{
+  "_id": {
+    "$oid": "6803168c5019628c45ec6c00"
+  },
+  "id_prod": "CHOCOLATE-CARLOS-V",
+  "nombre": "chocolate",
+  "precio": 15,
+  "granel": false,
+  "inv": 29
+}]

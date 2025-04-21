@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67febf3d0f33028ecc3515db"
+  },
+  "usr": "admin",
+  "pwd": "1234",
+  "privilege": 1
+},
+{
+  "_id": {
+    "$oid": "67ff35e2170a6302af574f09"
+  },
+  "usr": "leonardo",
+  "pwd": "123",
+  "privilege": 2
+}]

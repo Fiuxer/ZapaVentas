@@ -119,5 +119,12 @@ namespace ZapaVentas
                 Checkout.Show();
             }
         }
+
+        private void btn_conteo_Click(object sender, EventArgs e)
+        {
+            Form conteo = new conteo();
+            conteo.Show();
+            this.Hide();
+        }
     }
 }

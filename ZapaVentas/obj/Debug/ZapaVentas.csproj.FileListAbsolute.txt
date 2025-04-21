@@ -57,3 +57,4 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVen
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.checkout.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.config.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.main.resources
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.conteo.resources

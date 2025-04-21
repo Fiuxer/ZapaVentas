@@ -37,11 +37,11 @@
             this.btn_config = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
             this.dgv_compra_actual = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tick = new System.Windows.Forms.Timer(this.components);
             this.lbl_total = new System.Windows.Forms.Label();
             this.btn_cobrar = new System.Windows.Forms.Button();
             this.lbl_atiende = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,7 @@
             this.btn_conteo.TabIndex = 3;
             this.btn_conteo.Text = "Conteo";
             this.btn_conteo.UseVisualStyleBackColor = true;
+            this.btn_conteo.Click += new System.EventHandler(this.btn_conteo_Click);
             // 
             // btn_exit
             // 
@@ -119,18 +120,6 @@
             this.dgv_compra_actual.Size = new System.Drawing.Size(1123, 435);
             this.dgv_compra_actual.TabIndex = 6;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1180, 750);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tick
             // 
             this.tick.Enabled = true;
@@ -165,6 +154,18 @@
             this.lbl_atiende.Size = new System.Drawing.Size(76, 16);
             this.lbl_atiende.TabIndex = 10;
             this.lbl_atiende.Text = "Lo atiende: ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1180, 750);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // main
             // 
