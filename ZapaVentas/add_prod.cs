@@ -34,7 +34,7 @@ namespace ZapaVentas
             // Conectar a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
-            var database = client.GetDatabase("ZapaVentas");
+            var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<Producto>("productos");
 
             // Agarrar el nombre del producto

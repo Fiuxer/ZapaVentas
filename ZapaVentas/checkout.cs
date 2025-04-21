@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using static ZapaVentas.Program;
 
@@ -16,6 +17,22 @@ namespace ZapaVentas
     {
         //Para la animación del temporizador
         int time;
+
+        public class product
+        {
+            public string nombre { get; set; }
+            public double precio { get; set; }
+            public int cant { get; set; }
+        }
+
+        public class Venta
+        {
+            public ObjectId id { get; set; }
+            public DateTime fecha { get; set; }
+            public List<product> productos { get; set; }
+            public string usuario { get; set; }
+        }
+
         public checkout()
         {
             InitializeComponent();
@@ -55,7 +72,7 @@ namespace ZapaVentas
                     // Conexión a la base de datos
                     string connectionString = "mongodb://localhost:27017";
                     MongoClient client = new MongoClient(connectionString);
-                    var database = client.GetDatabase("ZapaVentas");
+                    var database = client.GetDatabase(Global.databaseName);
                     var collection = database.GetCollection<Producto>("productos");
 
                     // Buscar el producto en la base de datos con una función lambda
@@ -95,7 +112,7 @@ namespace ZapaVentas
                         // Conexión a la base de datos
                         string connectionString = "mongodb://localhost:27017";
                         MongoClient client = new MongoClient(connectionString);
-                        var database = client.GetDatabase("ZapaVentas");
+                        var database = client.GetDatabase(Global.databaseName);
                         var collection = database.GetCollection<Producto>("productos");
 
                         // Buscar el producto en la base de datos con una función lambda
@@ -111,6 +128,7 @@ namespace ZapaVentas
                         }
                     }
                     // Limpiar la lista de productos después de la compra
+                    addToVentas();
                     Global.productos.Clear();
                     this.Close();
                 }
@@ -148,7 +166,7 @@ namespace ZapaVentas
                     // Conexión a la base de datos
                     string connectionString = "mongodb://localhost:27017";
                     MongoClient client = new MongoClient(connectionString);
-                    var database = client.GetDatabase("ZapaVentas");
+                    var database = client.GetDatabase(Global.databaseName);
                     var collection = database.GetCollection<Producto>("productos");
 
                     // Buscar el producto en la base de datos con una función lambda
@@ -164,11 +182,37 @@ namespace ZapaVentas
                     }
                 }
                 // Limpiar la lista de productos después de la compra
+                addToVentas();
                 Global.productos.Clear();
                 this.Close();
             }
         }
 
+        private void addToVentas()
+        {
+            List<product> products = Global.productos.Select(p => new product
+            {
+                nombre = p.nombre,
+                precio = p.precio,
+                cant = p.inv,
+            }).ToList();
+
+
+            var productos = Global.productos;
+            var venta = new Venta
+            {
+                fecha = DateTime.Now,
+                productos = products,
+                usuario = Global.usr
+            };
+
+            string connectionString = "mongodb://localhost:27017";
+            MongoClient client = new MongoClient(connectionString);
+            var database = client.GetDatabase(Global.databaseName);
+            var collection = database.GetCollection<Venta>("ventas");
+
+            collection.InsertOne(venta);
+        }
         private void btn_tarjeta_Click(object sender, EventArgs e)
         {
             tick.Start();

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using static ZapaVentas.Program;
 
 namespace ZapaVentas
 {
@@ -54,7 +55,7 @@ namespace ZapaVentas
             // Conexión a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
-            var database = client.GetDatabase("ZapaVentas");
+            var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<producto>("productos");
 
             string prod_name = tbx_nombre.Text.Trim();
@@ -85,7 +86,7 @@ namespace ZapaVentas
 
         private void product_editor_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form1 form1 = new Form1();
+            main form1 = new main();
             form1.Show();
         }
 
@@ -94,7 +95,7 @@ namespace ZapaVentas
             // Conexión a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
-            var database = client.GetDatabase("ZapaVentas");
+            var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<producto>("productos");
 
             // Agarra los datos de las textbox

@@ -1,6 +1,6 @@
 ﻿namespace ZapaVentas
 {
-    partial class Form1
+    partial class main
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.btn_ventas = new System.Windows.Forms.Button();
             this.btn_productos = new System.Windows.Forms.Button();
             this.btn_conteo = new System.Windows.Forms.Button();
@@ -41,6 +41,7 @@
             this.tick = new System.Windows.Forms.Timer(this.components);
             this.lbl_total = new System.Windows.Forms.Label();
             this.btn_cobrar = new System.Windows.Forms.Button();
+            this.lbl_atiende = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -156,11 +157,21 @@
             this.btn_cobrar.UseVisualStyleBackColor = true;
             this.btn_cobrar.Click += new System.EventHandler(this.btn_cobrar_Click);
             // 
-            // Form1
+            // lbl_atiende
+            // 
+            this.lbl_atiende.AutoSize = true;
+            this.lbl_atiende.Location = new System.Drawing.Point(921, 163);
+            this.lbl_atiende.Name = "lbl_atiende";
+            this.lbl_atiende.Size = new System.Drawing.Size(76, 16);
+            this.lbl_atiende.TabIndex = 10;
+            this.lbl_atiende.Text = "Lo atiende: ";
+            // 
+            // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.lbl_atiende);
             this.Controls.Add(this.btn_cobrar);
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.btn_add);
@@ -172,7 +183,7 @@
             this.Controls.Add(this.btn_ventas);
             this.Controls.Add(this.pictureBox1);
             this.KeyPreview = true;
-            this.Name = "Form1";
+            this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -198,6 +209,7 @@
         private System.Windows.Forms.Timer tick;
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Button btn_cobrar;
+        private System.Windows.Forms.Label lbl_atiende;
     }
 }
 

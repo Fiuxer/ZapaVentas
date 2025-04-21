@@ -2,7 +2,6 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\ZapaVen
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\ZapaVentas.exe
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\ZapaVentas.pdb
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.csproj.AssemblyReference.cache
-C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.Form1.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.Properties.Resources.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.csproj.GenerateResource.cache
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.csproj.CoreCompileInputs.cache
@@ -56,3 +55,5 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVen
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.add_prod.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.product_editor.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.checkout.resources
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.config.resources
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.main.resources

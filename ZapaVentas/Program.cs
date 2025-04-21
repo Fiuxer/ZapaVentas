@@ -48,6 +48,12 @@ namespace ZapaVentas
 
             //Precio total de la compra actual
             public static double precioTotal { get; set; } = 0.0;
+
+            public static string connectionString { get; set; } = "mongodb://localhost:27017";
+
+            public static MongoClient client { get; set; } = new MongoClient(connectionString);
+
+            public static string databaseName { get; set; } = "ZapaVentas";
         }
     }
 }

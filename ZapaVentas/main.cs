@@ -13,9 +13,9 @@ using static ZapaVentas.Program;
 
 namespace ZapaVentas
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
-        public Form1()
+        public main()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace ZapaVentas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Ntc
+            lbl_atiende.Text = "Lo atiende: " + Global.usr;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -48,9 +48,8 @@ namespace ZapaVentas
             else
             {
                 // Si es administrador, abre la sección de configuración
-                //Form config = new Config();
-                //config.Show();
-                //this.Hide();
+                Form config = new config();
+                config.Show();
             }
         }
 
@@ -73,7 +72,7 @@ namespace ZapaVentas
             //Conexión a la base de datos
             string connectionString = "mongodb://localhost:27017";
             MongoClient client = new MongoClient(connectionString);
-            var database = client.GetDatabase("ZapaVentas");
+            var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<Producto>("productos");
             Global.precioTotal = 0;
 
