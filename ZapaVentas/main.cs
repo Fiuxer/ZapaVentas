@@ -126,5 +126,11 @@ namespace ZapaVentas
             conteo.Show();
             this.Hide();
         }
+
+        private void btn_ventas_Click(object sender, EventArgs e)
+        {
+            Form creditos = new creditos();
+            creditos.Show();
+        }
     }
 }

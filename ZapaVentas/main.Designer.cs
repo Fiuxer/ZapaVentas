@@ -55,6 +55,7 @@
             this.btn_ventas.TabIndex = 1;
             this.btn_ventas.Text = "Acerca";
             this.btn_ventas.UseVisualStyleBackColor = true;
+            this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
             // 
             // btn_productos
             // 

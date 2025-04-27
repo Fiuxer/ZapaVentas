@@ -52,6 +52,7 @@
             this.cbx_view_mine.TabIndex = 1;
             this.cbx_view_mine.Text = "Mis ventas";
             this.cbx_view_mine.UseVisualStyleBackColor = true;
+            this.cbx_view_mine.CheckedChanged += new System.EventHandler(this.cbx_view_mine_CheckedChanged);
             // 
             // conteo
             // 

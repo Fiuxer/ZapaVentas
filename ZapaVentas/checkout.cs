@@ -30,6 +30,7 @@ namespace ZapaVentas
             public ObjectId id { get; set; }
             public DateTime fecha { get; set; }
             public List<product> productos { get; set; }
+            public double total { get; set; }
             public string usuario { get; set; }
         }
 
@@ -203,7 +204,8 @@ namespace ZapaVentas
             {
                 fecha = DateTime.Now,
                 productos = products,
-                usuario = Global.usr
+                usuario = Global.usr,
+                total = Global.precioTotal
             };
 
             string connectionString = "mongodb://localhost:27017";
