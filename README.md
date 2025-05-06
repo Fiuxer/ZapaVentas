@@ -3,7 +3,7 @@ _Donde cada venta cuenta_
 
 ## PROPOSITO
 
-El propósito de la aplicación de ZapaVentas es el crear una aplicación de Punto de Venta, la cuál cumpla con todas las necesidades de una aplicación de punto de venta promedio. Actualmente con esta versión (v1.71.1). Se cuenta con las siguientes funciones:
+El propósito de la aplicación de ZapaVentas es el crear una aplicación de Punto de Venta, la cuál cumpla con todas las necesidades de una aplicación de punto de venta promedio. Actualmente con esta versión (a1.93.1). Se cuenta con las siguientes funciones:
 - Inicio de sesión
 - Ventana de cobro
 - Ventana para añadir / editar productos
@@ -11,6 +11,10 @@ El propósito de la aplicación de ZapaVentas es el crear una aplicación de Pun
 - Ventana de cobro
 - GUI integrado
 - Cobro en efectivo / tarjeta
+- Configuración de administrador
+- Cobro a granel y unitario
+- Acerca
+- Recuento de ventas
 
 ## Atención
 
