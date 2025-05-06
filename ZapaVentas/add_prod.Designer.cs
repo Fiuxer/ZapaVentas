@@ -34,9 +34,16 @@
             this.pnl_cantidad_envasado = new System.Windows.Forms.Panel();
             this.nud_cantidad = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnl_granel = new System.Windows.Forms.Panel();
+            this.lbl_ppk = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.nud_granel = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.pnl_cantidad_envasado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_cantidad)).BeginInit();
+            this.pnl_granel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_granel)).BeginInit();
             this.SuspendLayout();
             // 
             // tbx_nombre
@@ -109,11 +116,76 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Cantidad:";
             // 
+            // pnl_granel
+            // 
+            this.pnl_granel.Controls.Add(this.lbl_ppk);
+            this.pnl_granel.Controls.Add(this.label4);
+            this.pnl_granel.Controls.Add(this.nud_granel);
+            this.pnl_granel.Controls.Add(this.label3);
+            this.pnl_granel.Location = new System.Drawing.Point(133, 113);
+            this.pnl_granel.Name = "pnl_granel";
+            this.pnl_granel.Size = new System.Drawing.Size(541, 293);
+            this.pnl_granel.TabIndex = 4;
+            this.pnl_granel.Visible = false;
+            // 
+            // lbl_ppk
+            // 
+            this.lbl_ppk.AutoSize = true;
+            this.lbl_ppk.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
+            this.lbl_ppk.Location = new System.Drawing.Point(233, 84);
+            this.lbl_ppk.Name = "lbl_ppk";
+            this.lbl_ppk.Size = new System.Drawing.Size(98, 46);
+            this.lbl_ppk.TabIndex = 3;
+            this.lbl_ppk.Text = "$/Kg";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(237, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Precio unitario";
+            // 
+            // nud_granel
+            // 
+            this.nud_granel.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.nud_granel.Location = new System.Drawing.Point(226, 211);
+            this.nud_granel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_granel.Name = "nud_granel";
+            this.nud_granel.Size = new System.Drawing.Size(120, 22);
+            this.nud_granel.TabIndex = 1;
+            this.nud_granel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nud_granel.ValueChanged += new System.EventHandler(this.nud_granel_ValueChanged);
+            this.nud_granel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numericUpDown1_KeyDown);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(239, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 16);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Cantidad (kg):";
+            // 
             // add_prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_granel);
             this.Controls.Add(this.pnl_cantidad_envasado);
             this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.label1);
@@ -126,6 +198,9 @@
             this.pnl_cantidad_envasado.ResumeLayout(false);
             this.pnl_cantidad_envasado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_cantidad)).EndInit();
+            this.pnl_granel.ResumeLayout(false);
+            this.pnl_granel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_granel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,5 +214,10 @@
         private System.Windows.Forms.Panel pnl_cantidad_envasado;
         private System.Windows.Forms.NumericUpDown nud_cantidad;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnl_granel;
+        private System.Windows.Forms.Label lbl_ppk;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown nud_granel;
+        private System.Windows.Forms.Label label3;
     }
 }

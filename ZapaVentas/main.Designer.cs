@@ -113,9 +113,16 @@
             // 
             // dgv_compra_actual
             // 
+            this.dgv_compra_actual.AllowUserToAddRows = false;
+            this.dgv_compra_actual.AllowUserToDeleteRows = false;
+            this.dgv_compra_actual.AllowUserToOrderColumns = true;
+            this.dgv_compra_actual.AllowUserToResizeColumns = false;
+            this.dgv_compra_actual.AllowUserToResizeRows = false;
             this.dgv_compra_actual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_compra_actual.Enabled = false;
             this.dgv_compra_actual.Location = new System.Drawing.Point(28, 199);
             this.dgv_compra_actual.Name = "dgv_compra_actual";
+            this.dgv_compra_actual.ReadOnly = true;
             this.dgv_compra_actual.RowHeadersWidth = 51;
             this.dgv_compra_actual.RowTemplate.Height = 24;
             this.dgv_compra_actual.Size = new System.Drawing.Size(1123, 435);

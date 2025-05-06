@@ -19,8 +19,7 @@ namespace ZapaVentas
 
         private void creditos_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form main = new main();
-            main.Show();
+
         }
     }
 }

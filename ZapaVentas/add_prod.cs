@@ -77,6 +77,10 @@ namespace ZapaVentas
                 // Si el producto no es a granel, muestra el panel de cantidad
                 pnl_cantidad_envasado.Visible = true;
                 nud_cantidad.Focus();
+            } else
+            {
+                pnl_granel.Visible = true;
+                nud_granel.Focus();
             }
         }
 
@@ -93,7 +97,7 @@ namespace ZapaVentas
                         id_prod = nombre,
                         nombre = nombre,
                         precio = 0,
-                        granel = true,
+                        granel = false,
                         inv = cantidad
                     };
 
@@ -111,6 +115,52 @@ namespace ZapaVentas
         private void add_prod_FormClosed(object sender, FormClosedEventArgs e)
         {
 
+        }
+
+        private void numericUpDown1_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Al presionar Enter, se guarda el producto en la lista de productos
+            if (e.KeyCode == Keys.Enter)
+            {
+                cantidad = (int)nud_cantidad.Value;
+                if (inv >= cantidad)
+                {
+                    var compra = new Producto
+                    {
+                        id_prod = nombre,
+                        nombre = nombre,
+                        precio = 0,
+                        granel = true,
+                        inv = cantidad
+                    };
+                    Global.productos.Add(compra);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No hay inventario suficiente");
+                }                                                                     
+            }
+
+        }
+
+        private void nud_granel_ValueChanged(object sender, EventArgs e)
+        {
+            var connectionString = "mongodb://localhost:27017";
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(Global.databaseName);
+            var collection = database.GetCollection<Producto>("productos");
+
+            var filter = Builders<Producto>.Filter.Eq(u => u.nombre, nombre);
+            var result = collection.Find(filter).FirstOrDefault();
+
+            // Ver el producto y actualizar el precio
+            if (result != null)
+            {
+                string prsst = result.precio.ToString();
+                decimal price = decimal.Parse(prsst) * nud_granel.Value;
+                lbl_ppk.Text = "$" + price.ToString();
+            }
         }
     }
 }
