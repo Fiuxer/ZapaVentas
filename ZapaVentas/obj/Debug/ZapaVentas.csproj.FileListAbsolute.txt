@@ -15,7 +15,6 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microso
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microsoft.Win32.Registry.dll
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Bson.dll
-C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Driver.Core.dll
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Driver.dll
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Libmongocrypt.dll
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\SharpCompress.dll
@@ -39,7 +38,6 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microso
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microsoft.Win32.Registry.xml
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Bson.xml
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Driver.xml
-C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Driver.Core.xml
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\MongoDB.Libmongocrypt.pdb
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Snappier.xml
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Buffers.xml
@@ -59,3 +57,14 @@ C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVen
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.main.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.conteo.resources
 C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\obj\Debug\ZapaVentas.creditos.resources
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Text.Json.dll
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.ValueTuple.dll
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\SharpCompress.pdb
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.Text.Json.xml
+C:\Users\leona\OneDrive\Documents\GitHub\ZapaVentas\ZapaVentas\bin\Debug\System.ValueTuple.xml

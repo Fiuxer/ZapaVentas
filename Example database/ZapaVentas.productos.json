@@ -16,7 +16,7 @@
   "nombre": "coca",
   "precio": 20,
   "granel": false,
-  "inv": 18
+  "inv": 17
 },
 {
   "_id": {
@@ -26,7 +26,7 @@
   "nombre": "leche",
   "precio": 25,
   "granel": false,
-  "inv": 26
+  "inv": 25
 },
 {
   "_id": {

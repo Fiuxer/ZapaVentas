@@ -30,36 +30,36 @@ namespace ZapaVentas
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            // Conexión a la base de datos
-            var connectionString = "mongodb://localhost:27017";
-            var client = new MongoClient(connectionString);
-            var database = client.GetDatabase(Global.databaseName);
-            var collection = database.GetCollection<user>("usuarios");
+            const string connectionUri = "mongodb+srv://leonardinoeb:BL9Pyfej9em3dGyx@zapaventas.f63uizl.mongodb.net/?retryWrites=true&w=majority&appName=ZapaVentas";
 
-            // Buscar usuarios en los que el nombre y el usuario coincidan a
-            // los que el vendedor escribió con el uso de funciones lambda
-            var filter = Builders<user>.Filter.Eq("usr", tbx_usr.Text) &
-                            Builders<user>.Filter.Eq("pwd", tbx_pwd.Text);
+            var settings = MongoClientSettings.FromConnectionString(connectionUri);
+            settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+            var client = new MongoClient(settings);
 
-            // Si el usuario existe, se guarda en la variable usuarios
-            var usuarios = collection.Find(filter).FirstOrDefault();
-
-            // Si el usuario si existe, entra a la sección de ventas
-            if (usuarios != null)
+            try { 
+                var res = client.GetDatabase("ZapaVentas").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                Console.WriteLine("Conexión exitosa a MongoDB Atlas.");
+            } catch (Exception ex)
             {
-                Global.usr = tbx_usr.Text;
-                Global.privilege = usuarios.privilege;
+                Console.WriteLine(ex);
+            }
+
+            //Comprobar el usuario
+            var database = client.GetDatabase("ZapaVentas");
+            var collection = database.GetCollection<user>("usuarios");
+            var filter = Builders<user>.Filter.Eq(u => u.usr, tbx_usr.Text) & Builders<user>.Filter.Eq(u => u.pwd, tbx_pwd.Text);
+
+            var result = collection.Find(filter).FirstOrDefault();
+
+            if (result != null)
+            {
                 Form main = new main();
+                Global.usr = tbx_usr.Text;
+                Global.privilege = result.privilege;
                 main.Show();
                 this.Hide();
-            } else
-            {
-                // Si el usuario no existe, muestra un mensaje de datos incorrectos
-                MessageBox.Show("Usuario o contraseña incorrectos");
-                tbx_usr.Clear();
-                tbx_pwd.Clear();
-                tbx_usr.Focus();
             }
+
         }
 
         private void log_in_FormClosed(object sender, FormClosedEventArgs e)

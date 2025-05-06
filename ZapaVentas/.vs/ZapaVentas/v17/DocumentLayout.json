@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\log_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:log_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\log_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:log_in.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -35,19 +43,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "log_in.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\log_in.cs",
+              "RelativeDocumentMoniker": "log_in.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\log_in.cs",
+              "RelativeToolTip": "log_in.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wC4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T16:46:45.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "log_in.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\log_in.cs",
+              "RelativeDocumentMoniker": "log_in.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\log_in.cs [Dise\u00F1o]",
+              "RelativeToolTip": "log_in.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T16:46:41.345Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "config.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\config.cs",
               "RelativeDocumentMoniker": "config.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\config.cs",
               "RelativeToolTip": "config.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAqwFoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA8wE8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T16:07:49.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "config.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\config.cs",
               "RelativeDocumentMoniker": "config.cs",
@@ -59,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "main.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\main.cs",
               "RelativeDocumentMoniker": "main.cs",

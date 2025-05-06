@@ -18,4 +18,38 @@
     }
   ],
   "usuario": "leonardo"
+},
+{
+  "_id": {
+    "$oid": "680eae978c44856ed80538aa"
+  },
+  "fecha": {
+    "$date": "2025-04-27T22:24:23.903Z"
+  },
+  "productos": [
+    {
+      "nombre": "coca",
+      "precio": 20,
+      "cant": 1
+    }
+  ],
+  "total": 20,
+  "usuario": "admin"
+},
+{
+  "_id": {
+    "$oid": "680eaef44204bbc6a0a6ad88"
+  },
+  "fecha": {
+    "$date": "2025-04-27T22:25:56.447Z"
+  },
+  "productos": [
+    {
+      "nombre": "leche",
+      "precio": 25,
+      "cant": 1
+    }
+  ],
+  "total": 25,
+  "usuario": "leonardo"
 }]
