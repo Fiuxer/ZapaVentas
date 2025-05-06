@@ -85,5 +85,38 @@ namespace ZapaVentas
                 lbl_alert2.Visible = false;
             }
         }
+
+        private void btn_create_profile_Click(object sender, EventArgs e)
+        {
+            var connectionString = "mongodb://localhost:27017";
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase(Global.databaseName);
+            var collection = database.GetCollection<Usuario>("usuarios");
+
+            var newUser = new Usuario
+            {
+                usr = tbx_usr.Text,
+                pwd = tbx_pwd.Text,
+                privilege = Convert.ToInt32(cmb_rol.SelectedIndex) + 1
+            };
+
+            var filter = Builders<Usuario>.Filter.Eq(u => u.usr, newUser.usr);
+            var result = collection.Find(filter).FirstOrDefault();
+
+            if (result == null)
+            {
+                collection.InsertOne(newUser);
+                MessageBox.Show("Usuario creado exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("El usuario ya existe");
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
