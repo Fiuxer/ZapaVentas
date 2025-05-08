@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_database = new System.Windows.Forms.Label();
             this.btn_cambiar_nombre = new System.Windows.Forms.Button();
             this.tbx_database_name = new System.Windows.Forms.TextBox();
             this.lbl_alert = new System.Windows.Forms.Label();
-            this.lbl_alert2 = new System.Windows.Forms.Label();
             this.tbx_usr = new System.Windows.Forms.TextBox();
             this.btn_create_profile = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_newUsr = new System.Windows.Forms.Label();
             this.tbx_pwd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_usr = new System.Windows.Forms.Label();
+            this.lbl_pwd = new System.Windows.Forms.Label();
+            this.lbl_role = new System.Windows.Forms.Label();
             this.cmb_rol = new System.Windows.Forms.ComboBox();
+            this.lbl_lang = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_database
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Base de datos";
+            this.lbl_database.AutoSize = true;
+            this.lbl_database.Location = new System.Drawing.Point(119, 88);
+            this.lbl_database.Name = "lbl_database";
+            this.lbl_database.Size = new System.Drawing.Size(95, 16);
+            this.lbl_database.TabIndex = 0;
+            this.lbl_database.Text = "Base de datos";
             // 
             // btn_cambiar_nombre
             // 
@@ -76,23 +76,12 @@
             // 
             this.lbl_alert.AutoSize = true;
             this.lbl_alert.ForeColor = System.Drawing.Color.Red;
-            this.lbl_alert.Location = new System.Drawing.Point(119, 129);
+            this.lbl_alert.Location = new System.Drawing.Point(119, 153);
             this.lbl_alert.Name = "lbl_alert";
             this.lbl_alert.Size = new System.Drawing.Size(517, 16);
             this.lbl_alert.TabIndex = 3;
             this.lbl_alert.Text = "ATENCION: Se ocupa taner la base de datos ya creada para poder ver los productos";
             this.lbl_alert.Visible = false;
-            // 
-            // lbl_alert2
-            // 
-            this.lbl_alert2.AutoSize = true;
-            this.lbl_alert2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_alert2.Location = new System.Drawing.Point(280, 145);
-            this.lbl_alert2.Name = "lbl_alert2";
-            this.lbl_alert2.Size = new System.Drawing.Size(198, 16);
-            this.lbl_alert2.TabIndex = 4;
-            this.lbl_alert2.Text = "desde MongoDB sin problemas";
-            this.lbl_alert2.Visible = false;
             // 
             // tbx_usr
             // 
@@ -112,14 +101,14 @@
             this.btn_create_profile.UseVisualStyleBackColor = true;
             this.btn_create_profile.Click += new System.EventHandler(this.btn_create_profile_Click);
             // 
-            // label2
+            // lbl_newUsr
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 321);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Crear nuevo usuario";
+            this.lbl_newUsr.AutoSize = true;
+            this.lbl_newUsr.Location = new System.Drawing.Point(108, 321);
+            this.lbl_newUsr.Name = "lbl_newUsr";
+            this.lbl_newUsr.Size = new System.Drawing.Size(127, 16);
+            this.lbl_newUsr.TabIndex = 5;
+            this.lbl_newUsr.Text = "Crear nuevo usuario";
             // 
             // tbx_pwd
             // 
@@ -129,35 +118,35 @@
             this.tbx_pwd.Size = new System.Drawing.Size(206, 22);
             this.tbx_pwd.TabIndex = 8;
             // 
-            // label3
+            // lbl_usr
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
-            this.label3.Location = new System.Drawing.Point(269, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 12);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Usuario";
+            this.lbl_usr.AutoSize = true;
+            this.lbl_usr.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
+            this.lbl_usr.Location = new System.Drawing.Point(269, 275);
+            this.lbl_usr.Name = "lbl_usr";
+            this.lbl_usr.Size = new System.Drawing.Size(37, 12);
+            this.lbl_usr.TabIndex = 9;
+            this.lbl_usr.Text = "Usuario";
             // 
-            // label4
+            // lbl_pwd
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
-            this.label4.Location = new System.Drawing.Point(269, 329);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Contraseña";
+            this.lbl_pwd.AutoSize = true;
+            this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
+            this.lbl_pwd.Location = new System.Drawing.Point(269, 329);
+            this.lbl_pwd.Name = "lbl_pwd";
+            this.lbl_pwd.Size = new System.Drawing.Size(53, 12);
+            this.lbl_pwd.TabIndex = 10;
+            this.lbl_pwd.Text = "Contraseña";
             // 
-            // label5
+            // lbl_role
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
-            this.label5.Location = new System.Drawing.Point(269, 378);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 12);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Rol";
+            this.lbl_role.AutoSize = true;
+            this.lbl_role.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
+            this.lbl_role.Location = new System.Drawing.Point(269, 378);
+            this.lbl_role.Name = "lbl_role";
+            this.lbl_role.Size = new System.Drawing.Size(19, 12);
+            this.lbl_role.TabIndex = 12;
+            this.lbl_role.Text = "Rol";
             // 
             // cmb_rol
             // 
@@ -175,24 +164,33 @@
             this.cmb_rol.TabIndex = 13;
             this.cmb_rol.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // lbl_lang
+            // 
+            this.lbl_lang.AutoSize = true;
+            this.lbl_lang.Location = new System.Drawing.Point(170, 218);
+            this.lbl_lang.Name = "lbl_lang";
+            this.lbl_lang.Size = new System.Drawing.Size(48, 16);
+            this.lbl_lang.TabIndex = 14;
+            this.lbl_lang.Text = "Idioma";
+            // 
             // config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_lang);
             this.Controls.Add(this.cmb_rol);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_role);
+            this.Controls.Add(this.lbl_pwd);
+            this.Controls.Add(this.lbl_usr);
             this.Controls.Add(this.tbx_pwd);
             this.Controls.Add(this.tbx_usr);
             this.Controls.Add(this.btn_create_profile);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbl_alert2);
+            this.Controls.Add(this.lbl_newUsr);
             this.Controls.Add(this.lbl_alert);
             this.Controls.Add(this.tbx_database_name);
             this.Controls.Add(this.btn_cambiar_nombre);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_database);
             this.Name = "config";
             this.Text = "config";
             this.Load += new System.EventHandler(this.config_Load);
@@ -203,18 +201,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_database;
         private System.Windows.Forms.Button btn_cambiar_nombre;
         private System.Windows.Forms.TextBox tbx_database_name;
         private System.Windows.Forms.Label lbl_alert;
-        private System.Windows.Forms.Label lbl_alert2;
         private System.Windows.Forms.TextBox tbx_usr;
         private System.Windows.Forms.Button btn_create_profile;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_newUsr;
         private System.Windows.Forms.TextBox tbx_pwd;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_usr;
+        private System.Windows.Forms.Label lbl_pwd;
+        private System.Windows.Forms.Label lbl_role;
         private System.Windows.Forms.ComboBox cmb_rol;
+        private System.Windows.Forms.Label lbl_lang;
     }
 }

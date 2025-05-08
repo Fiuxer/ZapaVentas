@@ -61,12 +61,359 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Agregar producto.
+        /// </summary>
+        internal static string btn_add {
+            get {
+                return ResourceManager.GetString("btn_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar base.
+        /// </summary>
+        internal static string btn_cambiarNombre {
+            get {
+                return ResourceManager.GetString("btn_cambiarNombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cobrar.
+        /// </summary>
+        internal static string btn_checkout {
+            get {
+                return ResourceManager.GetString("btn_checkout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cobrar.
+        /// </summary>
+        internal static string btn_cobrar {
+            get {
+                return ResourceManager.GetString("btn_cobrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Agregar producto.
+        /// </summary>
+        internal static string btn_commit {
+            get {
+                return ResourceManager.GetString("btn_commit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Configuración.
+        /// </summary>
+        internal static string btn_config {
+            get {
+                return ResourceManager.GetString("btn_config", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Conteo.
+        /// </summary>
+        internal static string btn_conteo {
+            get {
+                return ResourceManager.GetString("btn_conteo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear perfil.
+        /// </summary>
+        internal static string btn_createProfile {
+            get {
+                return ResourceManager.GetString("btn_createProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cerrar Sesión.
+        /// </summary>
+        internal static string btn_exit {
+            get {
+                return ResourceManager.GetString("btn_exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Productos.
+        /// </summary>
+        internal static string btn_productos {
+            get {
+                return ResourceManager.GetString("btn_productos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acerca.
+        /// </summary>
+        internal static string btn_ventas {
+            get {
+                return ResourceManager.GetString("btn_ventas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Granel:.
+        /// </summary>
+        internal static string cbx_granel {
+            get {
+                return ResourceManager.GetString("cbx_granel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mis ventas.
+        /// </summary>
+        internal static string cbx_viewMine {
+            get {
+                return ResourceManager.GetString("cbx_viewMine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConteoBG {
+            get {
+                object obj = ResourceManager.GetObject("ConteoBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Aplicación creada por:.
+        /// </summary>
+        internal static string credits {
+            get {
+                return ResourceManager.GetString("credits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El pago no es suficiente.
+        /// </summary>
+        internal static string Error_NoEsSuficiente {
+            get {
+                return ResourceManager.GetString("Error_NoEsSuficiente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Créditos.
+        /// </summary>
+        internal static string formName {
+            get {
+                return ResourceManager.GetString("formName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Este programa fue desarrollado con fines educativos y/o de entretenimiento.
+        ///No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.
+        ///Todo el contenido utilizado pertenece a sus respectivos propietarios.
+        ///El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
+        ///Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad..
+        /// </summary>
+        internal static string label3_Text {
+            get {
+                return ResourceManager.GetString("label3.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ATENCION: Se ocupa tener la base de datos ya creada para poder ver los productos desde MongoDB sin problemas.
+        /// </summary>
+        internal static string lbl_alert {
+            get {
+                return ResourceManager.GetString("lbl_alert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Le atiende:.
+        /// </summary>
+        internal static string lbl_atiende {
+            get {
+                return ResourceManager.GetString("lbl_atiende", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Insertar tarjeta.
+        /// </summary>
+        internal static string lbl_card {
+            get {
+                return ResourceManager.GetString("lbl_card", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambio.
+        /// </summary>
+        internal static string lbl_change {
+            get {
+                return ResourceManager.GetString("lbl_change", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Base de datos.
+        /// </summary>
+        internal static string lbl_database {
+            get {
+                return ResourceManager.GetString("lbl_database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Inventario:.
+        /// </summary>
+        internal static string lbl_inv {
+            get {
+                return ResourceManager.GetString("lbl_inv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Idioma.
+        /// </summary>
+        internal static string lbl_lang {
+            get {
+                return ResourceManager.GetString("lbl_lang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear nuevo usuario.
+        /// </summary>
+        internal static string lbl_newUsr {
+            get {
+                return ResourceManager.GetString("lbl_newUsr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se encontraron productos con ese nombre\n Añadir producto a la derecha.
+        /// </summary>
+        internal static string lbl_noEncontrado {
+            get {
+                return ResourceManager.GetString("lbl_noEncontrado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Pagó con:.
+        /// </summary>
+        internal static string lbl_payWith {
+            get {
+                return ResourceManager.GetString("lbl_payWith", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Precio:.
+        /// </summary>
+        internal static string lbl_price {
+            get {
+                return ResourceManager.GetString("lbl_price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Id del producto:.
+        /// </summary>
+        internal static string lbl_prodId {
+            get {
+                return ResourceManager.GetString("lbl_prodId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre del producto.
+        /// </summary>
+        internal static string lbl_prodName {
+            get {
+                return ResourceManager.GetString("lbl_prodName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Total:.
+        /// </summary>
+        internal static string lbl_total {
+            get {
+                return ResourceManager.GetString("lbl_total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar Sesión.
+        /// </summary>
+        internal static string login {
+            get {
+                return ResourceManager.GetString("login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap MainBG {
             get {
                 object obj = ResourceManager.GetObject("MainBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Pago realizado con exito.
+        /// </summary>
+        internal static string PagoAceptado {
+            get {
+                return ResourceManager.GetString("PagoAceptado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        internal static string pwd {
+            get {
+                return ResourceManager.GetString("pwd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Rol.
+        /// </summary>
+        internal static string role {
+            get {
+                return ResourceManager.GetString("role", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Equipo-11.
+        /// </summary>
+        internal static string team {
+            get {
+                return ResourceManager.GetString("team", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Usuario.
+        /// </summary>
+        internal static string usr {
+            get {
+                return ResourceManager.GetString("usr", resourceCulture);
             }
         }
     }

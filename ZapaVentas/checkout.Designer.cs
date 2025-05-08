@@ -34,11 +34,11 @@
             this.btn_tarjeta = new System.Windows.Forms.Button();
             this.pnl_efectivo = new System.Windows.Forms.Panel();
             this.lbl_total_efectivo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_checkout = new System.Windows.Forms.Button();
             this.tbx_change = new System.Windows.Forms.TextBox();
             this.nud_pago = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_change = new System.Windows.Forms.Label();
+            this.lbl_payWith = new System.Windows.Forms.Label();
             this.pnl_card = new System.Windows.Forms.Panel();
             this.lbl_card = new System.Windows.Forms.Label();
             this.tick = new System.Windows.Forms.Timer(this.components);
@@ -79,12 +79,13 @@
             // 
             // pnl_efectivo
             // 
+            this.pnl_efectivo.Controls.Add(this.pnl_card);
             this.pnl_efectivo.Controls.Add(this.lbl_total_efectivo);
-            this.pnl_efectivo.Controls.Add(this.button1);
+            this.pnl_efectivo.Controls.Add(this.btn_checkout);
             this.pnl_efectivo.Controls.Add(this.tbx_change);
             this.pnl_efectivo.Controls.Add(this.nud_pago);
-            this.pnl_efectivo.Controls.Add(this.label2);
-            this.pnl_efectivo.Controls.Add(this.label1);
+            this.pnl_efectivo.Controls.Add(this.lbl_change);
+            this.pnl_efectivo.Controls.Add(this.lbl_payWith);
             this.pnl_efectivo.Location = new System.Drawing.Point(12, 12);
             this.pnl_efectivo.Name = "pnl_efectivo";
             this.pnl_efectivo.Size = new System.Drawing.Size(776, 426);
@@ -101,15 +102,15 @@
             this.lbl_total_efectivo.TabIndex = 5;
             this.lbl_total_efectivo.Text = "label3";
             // 
-            // button1
+            // btn_checkout
             // 
-            this.button1.Location = new System.Drawing.Point(312, 277);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 57);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cobrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_checkout.Location = new System.Drawing.Point(312, 277);
+            this.btn_checkout.Name = "btn_checkout";
+            this.btn_checkout.Size = new System.Drawing.Size(135, 57);
+            this.btn_checkout.TabIndex = 2;
+            this.btn_checkout.Text = "Cobrar";
+            this.btn_checkout.UseVisualStyleBackColor = true;
+            this.btn_checkout.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbx_change
             // 
@@ -136,28 +137,28 @@
             this.nud_pago.ValueChanged += new System.EventHandler(this.nud_pago_ValueChanged);
             this.nud_pago.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nud_pago_KeyDown);
             // 
-            // label2
+            // lbl_change
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(285, 228);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Cambio:";
+            this.lbl_change.AutoSize = true;
+            this.lbl_change.Location = new System.Drawing.Point(285, 228);
+            this.lbl_change.Name = "lbl_change";
+            this.lbl_change.Size = new System.Drawing.Size(57, 16);
+            this.lbl_change.TabIndex = 1;
+            this.lbl_change.Text = "Cambio:";
             // 
-            // label1
+            // lbl_payWith
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(271, 192);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Pagó con: ";
+            this.lbl_payWith.AutoSize = true;
+            this.lbl_payWith.Location = new System.Drawing.Point(271, 192);
+            this.lbl_payWith.Name = "lbl_payWith";
+            this.lbl_payWith.Size = new System.Drawing.Size(71, 16);
+            this.lbl_payWith.TabIndex = 0;
+            this.lbl_payWith.Text = "Pagó con: ";
             // 
             // pnl_card
             // 
             this.pnl_card.Controls.Add(this.lbl_card);
-            this.pnl_card.Location = new System.Drawing.Point(167, 81);
+            this.pnl_card.Location = new System.Drawing.Point(166, 27);
             this.pnl_card.Name = "pnl_card";
             this.pnl_card.Size = new System.Drawing.Size(455, 349);
             this.pnl_card.TabIndex = 11;
@@ -182,7 +183,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pnl_card);
             this.Controls.Add(this.pnl_efectivo);
             this.Controls.Add(this.btn_tarjeta);
             this.Controls.Add(this.btn_efectivo);
@@ -207,11 +207,11 @@
         private System.Windows.Forms.Button btn_tarjeta;
         private System.Windows.Forms.Panel pnl_efectivo;
         private System.Windows.Forms.NumericUpDown nud_pago;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_change;
+        private System.Windows.Forms.Label lbl_payWith;
         private System.Windows.Forms.TextBox tbx_change;
         private System.Windows.Forms.Label lbl_total_efectivo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_checkout;
         private System.Windows.Forms.Panel pnl_card;
         private System.Windows.Forms.Label lbl_card;
         private System.Windows.Forms.Timer tick;

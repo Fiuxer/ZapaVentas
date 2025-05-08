@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.tbx_nombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_prodName = new System.Windows.Forms.Label();
             this.dgv_productos = new System.Windows.Forms.DataGridView();
             this.lbl_no_encontrado = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_inv = new System.Windows.Forms.Label();
             this.cbx_granel = new System.Windows.Forms.CheckBox();
             this.tbx_precio = new System.Windows.Forms.TextBox();
             this.tbx_inv = new System.Windows.Forms.TextBox();
             this.btn_commit = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_prodId = new System.Windows.Forms.Label();
             this.tbx_id_prod = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.SuspendLayout();
@@ -51,14 +51,14 @@
             this.tbx_nombre.TabIndex = 0;
             this.tbx_nombre.TextChanged += new System.EventHandler(this.tbx_nombre_TextChanged);
             // 
-            // label1
+            // lbl_prodName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nombre del producto";
+            this.lbl_prodName.AutoSize = true;
+            this.lbl_prodName.Location = new System.Drawing.Point(108, 36);
+            this.lbl_prodName.Name = "lbl_prodName";
+            this.lbl_prodName.Size = new System.Drawing.Size(134, 16);
+            this.lbl_prodName.TabIndex = 1;
+            this.lbl_prodName.Text = "Nombre del producto";
             // 
             // dgv_productos
             // 
@@ -88,23 +88,23 @@
             this.lbl_no_encontrado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_no_encontrado.Visible = false;
             // 
-            // label2
+            // lbl_price
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(777, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Precio:";
+            this.lbl_price.AutoSize = true;
+            this.lbl_price.Location = new System.Drawing.Point(777, 119);
+            this.lbl_price.Name = "lbl_price";
+            this.lbl_price.Size = new System.Drawing.Size(49, 16);
+            this.lbl_price.TabIndex = 4;
+            this.lbl_price.Text = "Precio:";
             // 
-            // label3
+            // lbl_inv
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(777, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Inventario:";
+            this.lbl_inv.AutoSize = true;
+            this.lbl_inv.Location = new System.Drawing.Point(777, 215);
+            this.lbl_inv.Name = "lbl_inv";
+            this.lbl_inv.Size = new System.Drawing.Size(68, 16);
+            this.lbl_inv.TabIndex = 5;
+            this.lbl_inv.Text = "Inventario:";
             // 
             // cbx_granel
             // 
@@ -140,14 +140,14 @@
             this.btn_commit.UseVisualStyleBackColor = true;
             this.btn_commit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label4
+            // lbl_prodId
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(853, 308);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Id producto:";
+            this.lbl_prodId.AutoSize = true;
+            this.lbl_prodId.Location = new System.Drawing.Point(853, 308);
+            this.lbl_prodId.Name = "lbl_prodId";
+            this.lbl_prodId.Size = new System.Drawing.Size(77, 16);
+            this.lbl_prodId.TabIndex = 10;
+            this.lbl_prodId.Text = "Id producto:";
             // 
             // tbx_id_prod
             // 
@@ -162,16 +162,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1048, 572);
             this.Controls.Add(this.tbx_id_prod);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_prodId);
             this.Controls.Add(this.btn_commit);
             this.Controls.Add(this.tbx_inv);
             this.Controls.Add(this.tbx_precio);
             this.Controls.Add(this.cbx_granel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_inv);
+            this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.lbl_no_encontrado);
             this.Controls.Add(this.dgv_productos);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_prodName);
             this.Controls.Add(this.tbx_nombre);
             this.Name = "product_editor";
             this.Text = "product_editor";
@@ -186,16 +186,16 @@
         #endregion
 
         private System.Windows.Forms.TextBox tbx_nombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_prodName;
         private System.Windows.Forms.DataGridView dgv_productos;
         private System.Windows.Forms.Label lbl_no_encontrado;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_price;
+        private System.Windows.Forms.Label lbl_inv;
         private System.Windows.Forms.CheckBox cbx_granel;
         private System.Windows.Forms.TextBox tbx_precio;
         private System.Windows.Forms.TextBox tbx_inv;
         private System.Windows.Forms.Button btn_commit;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_prodId;
         private System.Windows.Forms.TextBox tbx_id_prod;
     }
 }

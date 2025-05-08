@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_conteo = new System.Windows.Forms.DataGridView();
             this.cbx_view_mine = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_conteo)).BeginInit();
@@ -35,6 +36,14 @@
             // 
             // dgv_conteo
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_conteo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_conteo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(171)))), ((int)(((byte)(188)))));
+            this.dgv_conteo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_conteo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_conteo.Location = new System.Drawing.Point(12, 65);
             this.dgv_conteo.Name = "dgv_conteo";
@@ -46,18 +55,20 @@
             // cbx_view_mine
             // 
             this.cbx_view_mine.AutoSize = true;
+            this.cbx_view_mine.BackColor = System.Drawing.Color.Transparent;
             this.cbx_view_mine.Location = new System.Drawing.Point(12, 25);
             this.cbx_view_mine.Name = "cbx_view_mine";
             this.cbx_view_mine.Size = new System.Drawing.Size(93, 20);
             this.cbx_view_mine.TabIndex = 1;
             this.cbx_view_mine.Text = "Mis ventas";
-            this.cbx_view_mine.UseVisualStyleBackColor = true;
+            this.cbx_view_mine.UseVisualStyleBackColor = false;
             this.cbx_view_mine.CheckedChanged += new System.EventHandler(this.cbx_view_mine_CheckedChanged);
             // 
             // conteo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ZapaVentas.Properties.Resources.ConteoBG;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cbx_view_mine);
             this.Controls.Add(this.dgv_conteo);

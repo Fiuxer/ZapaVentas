@@ -93,11 +93,12 @@
             // btn_config
             // 
             this.btn_config.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_config.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
             this.btn_config.Location = new System.Drawing.Point(919, 19);
             this.btn_config.Name = "btn_config";
             this.btn_config.Size = new System.Drawing.Size(78, 82);
             this.btn_config.TabIndex = 5;
-            this.btn_config.Text = "Config";
+            this.btn_config.Text = "Configuración";
             this.btn_config.UseVisualStyleBackColor = true;
             this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
             // 

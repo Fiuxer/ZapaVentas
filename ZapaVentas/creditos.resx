@@ -124,4 +124,13 @@ Todo el contenido utilizado pertenece a sus respectivos propietarios.
 El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
 Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad.</value>
   </data>
+  <data name="formName" xml:space="preserve">
+    <value>Créditos</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Equipo-11</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>Aplicación creada por:</value>
+  </data>
 </root>

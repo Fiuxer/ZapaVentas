@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -93,8 +95,8 @@ namespace ZapaVentas
                 this.Close();
             }
             else
-            { // Si el pago no es suficiente se muestra un mensaje
-                MessageBox.Show("El pago no es suficiente");
+            { // Si el pago no es suficiente se muestra un mensaje con el recurso local
+                MessageBox.Show(Resources.ResourceManager.GetString("Error_NoEsSuficiente"));
             }
         }
 
@@ -135,7 +137,7 @@ namespace ZapaVentas
                 }
                 else
                 { // Si el pago no es suficiente se muestra un mensaje
-                    MessageBox.Show("El pago no es suficiente");
+                    MessageBox.Show(Resources.ResourceManager.GetString("Error_NoEsSuficiente"));
                 }
             }
         }
