@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -59,6 +60,8 @@ namespace ZapaVentas
         private void conteo_Load(object sender, EventArgs e)
         {
             reload();
+
+            cbx_view_mine.Text = Resources.cbx_viewMine;
         }
 
         private void conteo_FormClosed(object sender, FormClosedEventArgs e)

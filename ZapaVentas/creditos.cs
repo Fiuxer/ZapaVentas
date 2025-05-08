@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZapaVentas.Properties;
 
 namespace ZapaVentas
 {
@@ -20,6 +21,12 @@ namespace ZapaVentas
         private void creditos_FormClosed(object sender, FormClosedEventArgs e)
         {
 
+        }
+
+        private void creditos_Load(object sender, EventArgs e)
+        {
+            label3.Text = Resources.label3_Text;
+            label1.Text = Resources.credits;
         }
     }
 }

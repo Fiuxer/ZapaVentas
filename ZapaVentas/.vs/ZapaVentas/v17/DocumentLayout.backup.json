@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\product_editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:product_editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\product_editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:product_editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\creditos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:creditos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\checkout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:checkout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|c:\\users\\leona\\onedrive\\documents\\github\\zapaventas\\zapaventas\\creditos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5DA78D-5C86-4E79-A9D0-9AA9180B8115}|ZapaVentas.csproj|solutionrelative:creditos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,50 +39,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "product_editor.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\product_editor.cs",
+              "RelativeDocumentMoniker": "product_editor.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\product_editor.cs",
+              "RelativeToolTip": "product_editor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:53:47.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "product_editor.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\product_editor.cs",
               "RelativeDocumentMoniker": "product_editor.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\product_editor.cs [Dise\u00F1o]",
               "RelativeToolTip": "product_editor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T04:55:56.731Z",
+              "WhenOpened": "2025-05-08T14:53:41.082Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "checkout.resx",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.resx",
-              "RelativeDocumentMoniker": "checkout.resx",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.resx",
-              "RelativeToolTip": "checkout.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-08T04:40:56.089Z",
+              "Title": "creditos.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\creditos.cs",
+              "RelativeDocumentMoniker": "creditos.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\creditos.cs",
+              "RelativeToolTip": "creditos.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAjwBwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:49:33.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "checkout.cs",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.cs",
-              "RelativeDocumentMoniker": "checkout.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.cs",
-              "RelativeToolTip": "checkout.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAnwGIAAABdAAAAAAAAAA==",
+              "Title": "creditos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\creditos.cs",
+              "RelativeDocumentMoniker": "creditos.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\creditos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "creditos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T04:32:34.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "checkout.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.cs",
-              "RelativeDocumentMoniker": "checkout.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documents\\GitHub\\ZapaVentas\\ZapaVentas\\checkout.cs [Dise\u00F1o]",
-              "RelativeToolTip": "checkout.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T04:29:35.992Z",
+              "WhenOpened": "2025-05-08T14:49:30.9Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

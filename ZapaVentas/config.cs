@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using System.Globalization;
+using System.Threading;
 using static ZapaVentas.Program;
+using ZapaVentas.Properties;
 
 namespace ZapaVentas
 {
@@ -31,6 +34,13 @@ namespace ZapaVentas
         private void config_Load(object sender, EventArgs e)
         {
             tbx_database_name.Text = Global.databaseName;
+
+            lbl_alert.Text = Resources.lbl_alert;
+            lbl_newUsr.Text = Resources.lbl_newUsr;
+            lbl_pwd.Text = Resources.pwd;
+            lbl_role.Text = Resources.role;
+            lbl_usr.Text = Resources.usr;
+            lbl_database.Text = Resources.lbl_database;
         }
 
         private void tbx_database_name_TextChanged(object sender, EventArgs e)
@@ -39,7 +49,6 @@ namespace ZapaVentas
             {
                 btn_cambiar_nombre.Visible = true;
                 lbl_alert.Visible = true;
-                lbl_alert2.Visible = true;
             }
         }
 
@@ -82,7 +91,6 @@ namespace ZapaVentas
             {
                 btn_cambiar_nombre.Visible = false;
                 lbl_alert.Visible = false;
-                lbl_alert2.Visible = false;
             }
         }
 
@@ -117,6 +125,31 @@ namespace ZapaVentas
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_es_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+        }
+
+        private void btn_en_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+        }
+
+        private void btn_de_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+        }
+
+        private void btn_fr_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+        }
+
+        private void btn_zn_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -27,6 +28,10 @@ namespace ZapaVentas
         private void add_prod_Load(object sender, EventArgs e)
         {
             reload_dgv();
+            lbl_granQuant.Text = Resources.lbl_price;
+            lbl_prodName.Text = Resources.lbl_prodName;
+            lbl_unitPrice.Text = Resources.lbl_price;
+            
         }
 
         private void reload_dgv()

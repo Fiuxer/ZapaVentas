@@ -118,19 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label3.Text" xml:space="preserve">
-    <value>Este programa fue desarrollado con fines educativos y/o de entretenimiento.
-No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.
-Todo el contenido utilizado pertenece a sus respectivos propietarios.
-El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
-Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad.</value>
-  </data>
-  <data name="formName" xml:space="preserve">
-    <value>Créditos</value>
-  </data>
-  <data name="team" xml:space="preserve">
-    <value>Equipo-11</value>
-  </data>
-  <data name="credits" xml:space="preserve">
-    <value>Aplicación creada por:</value>
+    <value>Este programa fue desarrollado con fines educativos y/o de entretenimiento.&lt;br&gt;No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.&lt;br&gt;Todo el contenido utilizado pertenece a sus respectivos propietarios.&lt;br&gt;El desarrollador no se responsabiliza por el uso indebido de esta aplicación.&lt;br&gt;Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad.</value>
   </data>
 </root>

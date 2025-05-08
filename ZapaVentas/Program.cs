@@ -36,11 +36,11 @@ namespace ZapaVentas
         public static class Global
         {
             //Usuario que está usando la aplicación actualmente
-            public static string usr { get; set; }
+            public static string usr { get; set; } = "Default user";
 
             //Nivel de privilegio del usuario para determinar a que funciones puede acceder
             // 1 = Administrador
-            // 2< = Usuario
+            // <2 = Usuario
             public static int privilege { get; set; }
 
             //Lista de los productos que se van a comprar

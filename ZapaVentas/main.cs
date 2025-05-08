@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -27,7 +28,14 @@ namespace ZapaVentas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_atiende.Text = "Lo atiende: " + Global.usr;
+            btn_ventas.Text = Resources.btn_ventas;
+            btn_productos.Text = Resources.btn_productos;
+            btn_conteo.Text = Resources.btn_conteo;
+            btn_config.Text = Resources.btn_config;
+            btn_exit.Text = Resources.btn_exit;
+            btn_add.Text = Resources.btn_add;
+            btn_cobrar.Text = Resources.btn_cobrar;
+            lbl_total.Text = Resources.lbl_total;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -43,7 +51,7 @@ namespace ZapaVentas
             if (Global.privilege > 1)
             {
                 // Si no es administrador entonces le avisa al vendedor
-                MessageBox.Show("No tienes privilegios para acceder a esta sección");
+                MessageBox.Show(Resources.noPriv);
             }
             else
             {
@@ -131,6 +139,11 @@ namespace ZapaVentas
         {
             Form creditos = new creditos();
             creditos.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

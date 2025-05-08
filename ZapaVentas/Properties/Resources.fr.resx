@@ -120,4 +120,127 @@
   <data name="btn_add" xml:space="preserve">
     <value>Ajouter un produit</value>
   </data>
+  <data name="usr" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Équipe-11</value>
+  </data>
+  <data name="PagoAceptado" xml:space="preserve">
+    <value>Paiement réussi</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="lbl_payWith" xml:space="preserve">
+    <value>Payé avec :</value>
+  </data>
+  <data name="lbl_change" xml:space="preserve">
+    <value>Monnaie</value>
+  </data>
+  <data name="lbl_card" xml:space="preserve">
+    <value>Insérer la carte</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Ce programme a été développé à des fins éducatives et/ou de divertissement.&lt;br&gt;Il n'a pas de but lucratif et ne vise pas à enfreindre les droits d'auteur d'une quelconque entité.&lt;br&gt;Tout le contenu utilisé appartient à ses propriétaires respectifs.&lt;br&gt;Le développeur n'est pas responsable de l'utilisation abusive de cette application.&lt;br&gt;En utilisant ce programme, vous acceptez de le faire sous votre propre responsabilité.</value>
+  </data>
+  <data name="formName" xml:space="preserve">
+    <value>Crédits</value>
+  </data>
+  <data name="Error_NoEsSuficiente" xml:space="preserve">
+    <value>Le paiement n'est pas suffisant</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>Application créée par :</value>
+  </data>
+  <data name="btn_checkout" xml:space="preserve">
+    <value>Paiement</value>
+  </data>
+  <data name="lbl_database" xml:space="preserve">
+    <value>Base de données</value>
+  </data>
+  <data name="btn_cambiarNombre" xml:space="preserve">
+    <value>Changer la base</value>
+  </data>
+  <data name="lbl_lang" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="pwd" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>Rôle</value>
+  </data>
+  <data name="lbl_newUsr" xml:space="preserve">
+    <value>Créer un nouvel utilisateur</value>
+  </data>
+  <data name="btn_createProfile" xml:space="preserve">
+    <value>Créer un profil</value>
+  </data>
+  <data name="lbl_alert" xml:space="preserve">
+    <value>ATTENTION : La base de données doit déjà être créée pour pouvoir visualiser les produits depuis MongoDB sans problème</value>
+  </data>
+  <data name="cbx_viewMine" xml:space="preserve">
+    <value>Mes ventes</value>
+  </data>
+  <data name="btn_ventas" xml:space="preserve">
+    <value>À propos</value>
+  </data>
+  <data name="btn_productos" xml:space="preserve">
+    <value>Produits</value>
+  </data>
+  <data name="btn_conteo" xml:space="preserve">
+    <value>Compte</value>
+  </data>
+  <data name="btn_config" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="btn_exit" xml:space="preserve">
+    <value>Déconnexion</value>
+  </data>
+  <data name="lbl_atiende" xml:space="preserve">
+    <value>Servi par :</value>
+  </data>
+  <data name="btn_cobrar" xml:space="preserve">
+    <value>Facturer</value>
+  </data>
+  <data name="lbl_total" xml:space="preserve">
+    <value>Total :</value>
+  </data>
+  <data name="lbl_prodName" xml:space="preserve">
+    <value>Nom du produit</value>
+  </data>
+  <data name="lbl_price" xml:space="preserve">
+    <value>Prix :</value>
+  </data>
+  <data name="lbl_inv" xml:space="preserve">
+    <value>Inventaire :</value>
+  </data>
+  <data name="lbl_prodId" xml:space="preserve">
+    <value>ID du produit :</value>
+  </data>
+  <data name="btn_commit" xml:space="preserve">
+    <value>Ajouter un produit</value>
+  </data>
+  <data name="cbx_granel" xml:space="preserve">
+    <value>Vrac :</value>
+  </data>
+  <data name="lbl_noEncontrado" xml:space="preserve">
+    <value>Aucun produit trouvé avec ce nom\nAjouter un produit à droite</value>
+  </data>
+  <data name="noPriv" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="btn_addProd" xml:space="preserve">
+    <value>Ajouter un produit</value>
+  </data>
+  <data name="btn_editProd" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="editAccept" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="addAccept" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
 </root>

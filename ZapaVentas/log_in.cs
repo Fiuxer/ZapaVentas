@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using System.Globalization;
+using System.Threading;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -65,6 +67,48 @@ namespace ZapaVentas
         private void log_in_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void log_in_Load(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+            refresh();
+        }
+
+        private void refresh()
+        {
+            btn_login.Text = Properties.Resources.login;
+            tbx_usr.Text = Properties.Resources.usr;
+        }
+
+        private void btn_es_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+            refresh();
+        }
+
+        private void btn_en_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+            refresh();
+        }
+
+        private void btn_de_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+            refresh();
+        }
+
+        private void btn_zn_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+            refresh();
+        }
+
+        private void btn_fr_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+            refresh();
         }
     }
 }

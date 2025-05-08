@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
 namespace ZapaVentas
@@ -40,13 +41,13 @@ namespace ZapaVentas
             if (!found)
             {
                 lbl_no_encontrado.Visible = true;
-                lbl_no_encontrado.Text = "No se encontraron productos con ese nombre\n Añadir producto a la derecha";
-                btn_commit.Text = "Agregar producto";
+                lbl_no_encontrado.Text = Resources.lbl_noEncontrado;
+                btn_commit.Text = Resources.btn_addProd;
             } else
             {
                 lbl_no_encontrado.Visible = false;
                 lbl_no_encontrado.Text = "";
-                btn_commit.Text = "Editar producto";
+                btn_commit.Text = Resources.btn_editProd;
             }
         }
 
@@ -123,7 +124,7 @@ namespace ZapaVentas
 
                 collection.InsertOne(new_prod);
 
-                MessageBox.Show("Producto añadido correctamente");
+                MessageBox.Show(Resources.addAccept);
             } else
             { // Si existe, entonces lo edita
                 var update = Builders<producto>.Update
@@ -133,7 +134,7 @@ namespace ZapaVentas
                     .Set("inv", inv);
                 collection.UpdateOne(u => u.nombre == nombre, update);
 
-                MessageBox.Show("Producto editado correctamente");
+                MessageBox.Show(Resources.editAccept);
             }
 
             // Recarga el DataGridView con la función reload_dgv()
@@ -144,6 +145,11 @@ namespace ZapaVentas
         {
             // Al cargar la base de datos, recarga el DataGridView
             reload_dgv();
+
+            lbl_inv.Text = Resources.lbl_inv;
+            lbl_price.Text = Resources.lbl_price;
+            lbl_prodId.Text = Resources.lbl_prodId;
+            lbl_prodName.Text = Resources.lbl_prodName;
         }
 
         private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)

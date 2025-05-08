@@ -40,7 +40,6 @@
             this.lbl_pwd = new System.Windows.Forms.Label();
             this.lbl_role = new System.Windows.Forms.Label();
             this.cmb_rol = new System.Windows.Forms.ComboBox();
-            this.lbl_lang = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_database
@@ -164,21 +163,11 @@
             this.cmb_rol.TabIndex = 13;
             this.cmb_rol.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // lbl_lang
-            // 
-            this.lbl_lang.AutoSize = true;
-            this.lbl_lang.Location = new System.Drawing.Point(170, 218);
-            this.lbl_lang.Name = "lbl_lang";
-            this.lbl_lang.Size = new System.Drawing.Size(48, 16);
-            this.lbl_lang.TabIndex = 14;
-            this.lbl_lang.Text = "Idioma";
-            // 
             // config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl_lang);
             this.Controls.Add(this.cmb_rol);
             this.Controls.Add(this.lbl_role);
             this.Controls.Add(this.lbl_pwd);
@@ -213,6 +202,5 @@
         private System.Windows.Forms.Label lbl_pwd;
         private System.Windows.Forms.Label lbl_role;
         private System.Windows.Forms.ComboBox cmb_rol;
-        private System.Windows.Forms.Label lbl_lang;
     }
 }

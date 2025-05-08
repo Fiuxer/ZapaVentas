@@ -40,7 +40,6 @@
             this.tick = new System.Windows.Forms.Timer(this.components);
             this.lbl_total = new System.Windows.Forms.Label();
             this.btn_cobrar = new System.Windows.Forms.Button();
-            this.lbl_atiende = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_compra_actual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -155,15 +154,6 @@
             this.btn_cobrar.UseVisualStyleBackColor = true;
             this.btn_cobrar.Click += new System.EventHandler(this.btn_cobrar_Click);
             // 
-            // lbl_atiende
-            // 
-            this.lbl_atiende.AutoSize = true;
-            this.lbl_atiende.Location = new System.Drawing.Point(921, 163);
-            this.lbl_atiende.Name = "lbl_atiende";
-            this.lbl_atiende.Size = new System.Drawing.Size(76, 16);
-            this.lbl_atiende.TabIndex = 10;
-            this.lbl_atiende.Text = "Lo atiende: ";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
@@ -175,13 +165,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
-            this.Controls.Add(this.lbl_atiende);
             this.Controls.Add(this.btn_cobrar);
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.btn_add);
@@ -219,7 +209,6 @@
         private System.Windows.Forms.Timer tick;
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Button btn_cobrar;
-        private System.Windows.Forms.Label lbl_atiende;
     }
 }
 

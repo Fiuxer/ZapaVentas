@@ -45,6 +45,16 @@ namespace ZapaVentas
         {
             // Mostrar el precio de la compra
             lbl_total.Text = "$" + Global.precioTotal.ToString();
+
+            lbl_card.Text = Resources.lbl_card;
+            lbl_change.Text = Resources.lbl_change;
+            lbl_payWith.Text = Resources.lbl_payWith;
+            lbl_total.Text = Resources.lbl_total;
+            lbl_total_efectivo.Text = Resources.lbl_total;
+
+            btn_checkout.Text = Resources.btn_checkout;
+            btn_efectivo.Text = Resources.btn_cobrar;
+            btn_tarjeta.Text = Resources.btn_cobrar;
         }
 
         private void btn_efectivo_Click(object sender, EventArgs e)
@@ -69,7 +79,7 @@ namespace ZapaVentas
             double pago = (double)nud_pago.Value;
             if (pago >= Global.precioTotal)
             { // Si el pago es suficiente se muestra que se realizó el pago
-                MessageBox.Show("Pago realizado con éxito");
+                MessageBox.Show(Resources.PagoAceptado);
                 foreach (Producto producto in Global.productos)
                 {
                     // Conexión a la base de datos
@@ -96,7 +106,7 @@ namespace ZapaVentas
             }
             else
             { // Si el pago no es suficiente se muestra un mensaje con el recurso local
-                MessageBox.Show(Resources.ResourceManager.GetString("Error_NoEsSuficiente"));
+                MessageBox.Show(Resources.Error_NoEsSuficiente);
             }
         }
 
@@ -109,7 +119,7 @@ namespace ZapaVentas
                 double pago = (double)nud_pago.Value;
                 if (pago >= Global.precioTotal)
                 { // Si el pago es suficiente se muestra que se realizó el pago
-                    MessageBox.Show("Pago realizado con éxito");
+                    MessageBox.Show(Resources.PagoAceptado);
                     foreach (Producto producto in Global.productos)
                     {
                         // Conexión a la base de datos
@@ -137,7 +147,7 @@ namespace ZapaVentas
                 }
                 else
                 { // Si el pago no es suficiente se muestra un mensaje
-                    MessageBox.Show(Resources.ResourceManager.GetString("Error_NoEsSuficiente"));
+                    MessageBox.Show(Resources.Error_NoEsSuficiente);
                 }
             }
         }
@@ -147,7 +157,7 @@ namespace ZapaVentas
             // Una animación para la pura estética del programa
             if (time < 15)
             {
-                string text = "Insertar tarjeta.";
+                string text = Resources.lbl_card;
 
                 for (int i = 0; i < time % 3; i++)
                 {
@@ -158,7 +168,7 @@ namespace ZapaVentas
                 time++;
             } else if (time < 20)
             {
-                lbl_card.Text = "Gracias por su compra";
+                lbl_card.Text = Resources.PagoAceptado;
                 time++;
             }
             else

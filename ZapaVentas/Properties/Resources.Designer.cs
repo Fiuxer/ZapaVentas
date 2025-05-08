@@ -61,11 +61,29 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Producto agregado correctamente.
+        /// </summary>
+        internal static string addAccept {
+            get {
+                return ResourceManager.GetString("addAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Agregar producto.
         /// </summary>
         internal static string btn_add {
             get {
                 return ResourceManager.GetString("btn_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Agregar producto.
+        /// </summary>
+        internal static string btn_addProd {
+            get {
+                return ResourceManager.GetString("btn_addProd", resourceCulture);
             }
         }
         
@@ -129,6 +147,15 @@ namespace ZapaVentas.Properties {
         internal static string btn_createProfile {
             get {
                 return ResourceManager.GetString("btn_createProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Editar producto.
+        /// </summary>
+        internal static string btn_editProd {
+            get {
+                return ResourceManager.GetString("btn_editProd", resourceCulture);
             }
         }
         
@@ -197,6 +224,15 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Producto editado correctamente.
+        /// </summary>
+        internal static string editAccept {
+            get {
+                return ResourceManager.GetString("editAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El pago no es suficiente.
         /// </summary>
         internal static string Error_NoEsSuficiente {
@@ -215,11 +251,7 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Este programa fue desarrollado con fines educativos y/o de entretenimiento.
-        ///No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.
-        ///Todo el contenido utilizado pertenece a sus respectivos propietarios.
-        ///El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
-        ///Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad..
+        ///   Busca una cadena traducida similar a Este programa fue desarrollado con fines educativos y/o de entretenimiento.\nNo tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.\nTodo el contenido utilizado pertenece a sus respectivos propietarios.\nEl desarrollador no se responsabiliza por el uso indebido de esta aplicación.\nAl utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad..
         /// </summary>
         internal static string label3_Text {
             get {
@@ -369,6 +401,15 @@ namespace ZapaVentas.Properties {
             get {
                 object obj = ResourceManager.GetObject("MainBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No tienes los privilegios para acceder a esta sección.
+        /// </summary>
+        internal static string noPriv {
+            get {
+                return ResourceManager.GetString("noPriv", resourceCulture);
             }
         }
         

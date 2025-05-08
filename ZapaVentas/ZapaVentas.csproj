@@ -214,8 +214,32 @@
     <EmbeddedResource Include="conteo.resx">
       <DependentUpon>conteo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="creditos.de-DE.resx">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditos.en-US.resx">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditos.fr.resx">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="creditos.resx">
       <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditos.zh-CHS.resx">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.de-DE.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.en-US.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.fr.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.zh-CHS.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
