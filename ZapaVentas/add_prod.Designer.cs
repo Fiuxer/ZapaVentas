@@ -48,29 +48,32 @@
             // 
             // tbx_nombre
             // 
-            this.tbx_nombre.Location = new System.Drawing.Point(40, 66);
+            this.tbx_nombre.Location = new System.Drawing.Point(30, 54);
+            this.tbx_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbx_nombre.Name = "tbx_nombre";
-            this.tbx_nombre.Size = new System.Drawing.Size(228, 22);
+            this.tbx_nombre.Size = new System.Drawing.Size(172, 20);
             this.tbx_nombre.TabIndex = 0;
             // 
             // lbl_prodName
             // 
             this.lbl_prodName.AutoSize = true;
-            this.lbl_prodName.Location = new System.Drawing.Point(87, 47);
+            this.lbl_prodName.Location = new System.Drawing.Point(65, 38);
+            this.lbl_prodName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_prodName.Name = "lbl_prodName";
-            this.lbl_prodName.Size = new System.Drawing.Size(134, 16);
+            this.lbl_prodName.Size = new System.Drawing.Size(106, 13);
             this.lbl_prodName.TabIndex = 1;
             this.lbl_prodName.Text = "Nombre del producto";
             // 
             // dgv_productos
             // 
             this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_productos.Location = new System.Drawing.Point(12, 94);
+            this.dgv_productos.Location = new System.Drawing.Point(9, 76);
+            this.dgv_productos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_productos.Name = "dgv_productos";
             this.dgv_productos.ReadOnly = true;
             this.dgv_productos.RowHeadersWidth = 51;
             this.dgv_productos.RowTemplate.Height = 24;
-            this.dgv_productos.Size = new System.Drawing.Size(776, 344);
+            this.dgv_productos.Size = new System.Drawing.Size(582, 280);
             this.dgv_productos.TabIndex = 2;
             this.dgv_productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_CellContentClick);
             // 
@@ -78,15 +81,17 @@
             // 
             this.pnl_cantidad_envasado.Controls.Add(this.nud_cantidad);
             this.pnl_cantidad_envasado.Controls.Add(this.label2);
-            this.pnl_cantidad_envasado.Location = new System.Drawing.Point(133, 112);
+            this.pnl_cantidad_envasado.Location = new System.Drawing.Point(100, 91);
+            this.pnl_cantidad_envasado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_cantidad_envasado.Name = "pnl_cantidad_envasado";
-            this.pnl_cantidad_envasado.Size = new System.Drawing.Size(541, 293);
+            this.pnl_cantidad_envasado.Size = new System.Drawing.Size(406, 238);
             this.pnl_cantidad_envasado.TabIndex = 3;
             this.pnl_cantidad_envasado.Visible = false;
             // 
             // nud_cantidad
             // 
-            this.nud_cantidad.Location = new System.Drawing.Point(209, 119);
+            this.nud_cantidad.Location = new System.Drawing.Point(157, 97);
+            this.nud_cantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nud_cantidad.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -98,7 +103,7 @@
             0,
             0});
             this.nud_cantidad.Name = "nud_cantidad";
-            this.nud_cantidad.Size = new System.Drawing.Size(120, 22);
+            this.nud_cantidad.Size = new System.Drawing.Size(90, 20);
             this.nud_cantidad.TabIndex = 1;
             this.nud_cantidad.Value = new decimal(new int[] {
             1,
@@ -110,9 +115,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 84);
+            this.label2.Location = new System.Drawing.Point(176, 68);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Cantidad:";
             // 
@@ -122,9 +128,10 @@
             this.pnl_granel.Controls.Add(this.lbl_unitPrice);
             this.pnl_granel.Controls.Add(this.nud_granel);
             this.pnl_granel.Controls.Add(this.lbl_granQuant);
-            this.pnl_granel.Location = new System.Drawing.Point(133, 113);
+            this.pnl_granel.Location = new System.Drawing.Point(100, 92);
+            this.pnl_granel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_granel.Name = "pnl_granel";
-            this.pnl_granel.Size = new System.Drawing.Size(541, 293);
+            this.pnl_granel.Size = new System.Drawing.Size(406, 238);
             this.pnl_granel.TabIndex = 4;
             this.pnl_granel.Visible = false;
             // 
@@ -132,18 +139,20 @@
             // 
             this.lbl_ppk.AutoSize = true;
             this.lbl_ppk.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
-            this.lbl_ppk.Location = new System.Drawing.Point(233, 84);
+            this.lbl_ppk.Location = new System.Drawing.Point(175, 68);
+            this.lbl_ppk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ppk.Name = "lbl_ppk";
-            this.lbl_ppk.Size = new System.Drawing.Size(98, 46);
+            this.lbl_ppk.Size = new System.Drawing.Size(80, 37);
             this.lbl_ppk.TabIndex = 3;
             this.lbl_ppk.Text = "$/Kg";
             // 
             // lbl_unitPrice
             // 
             this.lbl_unitPrice.AutoSize = true;
-            this.lbl_unitPrice.Location = new System.Drawing.Point(237, 44);
+            this.lbl_unitPrice.Location = new System.Drawing.Point(178, 36);
+            this.lbl_unitPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_unitPrice.Name = "lbl_unitPrice";
-            this.lbl_unitPrice.Size = new System.Drawing.Size(92, 16);
+            this.lbl_unitPrice.Size = new System.Drawing.Size(74, 13);
             this.lbl_unitPrice.TabIndex = 2;
             this.lbl_unitPrice.Text = "Precio unitario";
             // 
@@ -154,14 +163,15 @@
             0,
             0,
             65536});
-            this.nud_granel.Location = new System.Drawing.Point(226, 211);
+            this.nud_granel.Location = new System.Drawing.Point(170, 171);
+            this.nud_granel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nud_granel.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nud_granel.Name = "nud_granel";
-            this.nud_granel.Size = new System.Drawing.Size(120, 22);
+            this.nud_granel.Size = new System.Drawing.Size(90, 20);
             this.nud_granel.TabIndex = 1;
             this.nud_granel.Value = new decimal(new int[] {
             1,
@@ -174,24 +184,26 @@
             // lbl_granQuant
             // 
             this.lbl_granQuant.AutoSize = true;
-            this.lbl_granQuant.Location = new System.Drawing.Point(239, 183);
+            this.lbl_granQuant.Location = new System.Drawing.Point(179, 149);
+            this.lbl_granQuant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_granQuant.Name = "lbl_granQuant";
-            this.lbl_granQuant.Size = new System.Drawing.Size(90, 16);
+            this.lbl_granQuant.Size = new System.Drawing.Size(73, 13);
             this.lbl_granQuant.TabIndex = 0;
             this.lbl_granQuant.Text = "Cantidad (kg):";
             // 
             // add_prod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.pnl_granel);
             this.Controls.Add(this.pnl_cantidad_envasado);
             this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.lbl_prodName);
             this.Controls.Add(this.tbx_nombre);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "add_prod";
-            this.Text = "add_prod";
+            this.Text = "Añadir Producto";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.add_prod_FormClosed);
             this.Load += new System.EventHandler(this.add_prod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();

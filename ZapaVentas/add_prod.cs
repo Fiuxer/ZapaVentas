@@ -16,9 +16,10 @@ namespace ZapaVentas
 {
     public partial class add_prod : Form
     {
-        string nombre;
-        int cantidad;
-        int inv;
+        // Declaración de Variables
+        string nombre; // Nombre del producto
+        int cantidad; // Cantidad de producto a comprar
+        int inv; // Inventario del producto
 
         public add_prod()
         {
@@ -27,6 +28,7 @@ namespace ZapaVentas
 
         private void add_prod_Load(object sender, EventArgs e)
         {
+
             reload_dgv();
             lbl_granQuant.Text = Resources.lbl_price;
             lbl_prodName.Text = Resources.lbl_prodName;
@@ -84,6 +86,7 @@ namespace ZapaVentas
                 nud_cantidad.Focus();
             } else
             {
+                // De lo contrario, muestra el panel de granel
                 pnl_granel.Visible = true;
                 nud_granel.Focus();
             }
