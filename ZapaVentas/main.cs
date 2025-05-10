@@ -28,6 +28,7 @@ namespace ZapaVentas
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Carga las traducciones cuando inicia el form
             btn_ventas.Text = Resources.btn_ventas;
             btn_productos.Text = Resources.btn_productos;
             btn_conteo.Text = Resources.btn_conteo;
@@ -38,8 +39,9 @@ namespace ZapaVentas
             lbl_total.Text = Resources.lbl_total;
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e) // Boton de cerrar sesión
         {
+            // Cierra la sesión actual
             Form logIn = new log_in();
             logIn.Show();
             this.Hide();
@@ -63,13 +65,16 @@ namespace ZapaVentas
 
         private void btn_add_Click(object sender, EventArgs e)
         {
+            // Va a el formulario de agregar productos a la lista de compras
             add_prod add_Prod = new add_prod();
             add_Prod.Show();
+            // Recarga la lista de productos
             dgv_compra_actual.Refresh();
         }
 
         private void btn_productos_Click(object sender, EventArgs e)
         {
+            // Va a el formulario del editor de productos
             product_editor product_Editor = new product_editor();
             product_Editor.Show();
             this.Hide();
@@ -114,13 +119,13 @@ namespace ZapaVentas
 
         private void btn_cobrar_Click(object sender, EventArgs e)
         {
-            checkout Checkout = new checkout();
-            Checkout.Show();
+            checkout Checkout = new checkout(); // Abre el formulario de cobro
+            Checkout.ShowDialog();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            //Si se pulsa la tecla F12, cobrar
+            //Si se pulsa la tecla F12, hace el acceso directo a la pantalla de cobro
             if (e.KeyCode == Keys.F12)
             {
                 checkout Checkout = new checkout();
@@ -130,20 +135,15 @@ namespace ZapaVentas
 
         private void btn_conteo_Click(object sender, EventArgs e)
         {
-            Form conteo = new conteo();
+            Form conteo = new conteo(); // Abre el formulario de conteo, que es el registro de todas las compras
             conteo.Show();
             this.Hide();
         }
 
         private void btn_ventas_Click(object sender, EventArgs e)
         {
-            Form creditos = new creditos();
+            Form creditos = new creditos(); // Va al formulario de los creditos
             creditos.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

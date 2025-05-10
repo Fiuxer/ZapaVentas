@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btn_add" xml:space="preserve">
-    <value>添加产品</value>
-  </data>
   <data name="usr" xml:space="preserve">
     <value>用户</value>
   </data>
@@ -198,6 +195,9 @@
   <data name="btn_exit" xml:space="preserve">
     <value>退出登录</value>
   </data>
+  <data name="btn_add" xml:space="preserve">
+    <value>添加产品</value>
+  </data>
   <data name="lbl_atiende" xml:space="preserve">
     <value>服务人员：</value>
   </data>
@@ -241,6 +241,12 @@
     <value>PLACEHOLDER</value>
   </data>
   <data name="addAccept" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="btn_efectivo" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="btn_tarjeta" xml:space="preserve">
     <value>PLACEHOLDER</value>
   </data>
 </root>

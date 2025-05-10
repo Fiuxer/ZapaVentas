@@ -160,6 +160,15 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Efectivo.
+        /// </summary>
+        internal static string btn_efectivo {
+            get {
+                return ResourceManager.GetString("btn_efectivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cerrar Sesión.
         /// </summary>
         internal static string btn_exit {
@@ -174,6 +183,15 @@ namespace ZapaVentas.Properties {
         internal static string btn_productos {
             get {
                 return ResourceManager.GetString("btn_productos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tarjeta.
+        /// </summary>
+        internal static string btn_tarjeta {
+            get {
+                return ResourceManager.GetString("btn_tarjeta", resourceCulture);
             }
         }
         

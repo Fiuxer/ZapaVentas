@@ -250,4 +250,10 @@
   <data name="addAccept" xml:space="preserve">
     <value>Producto agregado correctamente</value>
   </data>
+  <data name="btn_efectivo" xml:space="preserve">
+    <value>Efectivo</value>
+  </data>
+  <data name="btn_tarjeta" xml:space="preserve">
+    <value>Tarjeta</value>
+  </data>
 </root>

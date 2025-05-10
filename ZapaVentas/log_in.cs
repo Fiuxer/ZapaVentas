@@ -66,49 +66,50 @@ namespace ZapaVentas
 
         private void log_in_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); // Si la aplicación se cierra, acaba con el proceso para evitar consumo de recursos.
         }
 
         private void log_in_Load(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es"); // Coloca el idioma español por defecto.
             refresh();
         }
 
-        private void refresh()
+        private void refresh() // Función para refrescar el texto de los botones
         {
-            btn_login.Text = Properties.Resources.login;
+            // Reemplaza el texto de los botones para que sean multilenguaje, para poder cambiarles el texto con facilidad.
+            btn_login.Text = Properties.Resources.login;  
             tbx_usr.Text = Properties.Resources.usr;
         }
 
-        private void btn_es_Click(object sender, EventArgs e)
+        private void btn_es_Click(object sender, EventArgs e) // Botón para cambiar el idioma a español
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
-            refresh();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es"); // Cambia el idioma a español
+            refresh(); // Recarga el texto de los botones
         }
 
-        private void btn_en_Click(object sender, EventArgs e)
+        private void btn_en_Click(object sender, EventArgs e) // Botón para cambiar el idioma a inglés
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-            refresh();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US"); // Cambia el idioma a inglés
+            refresh(); // Recarga el texto de los botones
         }
 
-        private void btn_de_Click(object sender, EventArgs e)
+        private void btn_de_Click(object sender, EventArgs e) // Botón para cambiar el idioma a alemán
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
-            refresh();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE"); // Cambia el idioma a alemán
+            refresh(); // Recarga el texto de los botones
         }
 
-        private void btn_zn_Click(object sender, EventArgs e)
+        private void btn_zn_Click(object sender, EventArgs e) // Botón para cambiar el idioma a chino
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
-            refresh();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS"); // Cambia el idioma a chino
+            refresh(); // Recarga el texto de los botones
         }
 
-        private void btn_fr_Click(object sender, EventArgs e)
+        private void btn_fr_Click(object sender, EventArgs e) // Botón para cambiar el idioma a francés
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
-            refresh();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr"); // Cambia el idioma a francés
+            refresh(); // Recarga el texto de los botones
         }
     }
 }
