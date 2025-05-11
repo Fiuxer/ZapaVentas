@@ -80,6 +80,9 @@ namespace ZapaVentas
             // Reemplaza el texto de los botones para que sean multilenguaje, para poder cambiarles el texto con facilidad.
             btn_login.Text = Properties.Resources.login;  
             tbx_usr.Text = Properties.Resources.usr;
+            lbl_title.Text = Properties.Resources.iniciarsesion;
+            lbl_user.Text = Properties.Resources.usr;
+            lbl_pass.Text = Properties.Resources.pwd;
         }
 
         private void btn_es_Click(object sender, EventArgs e) // Botón para cambiar el idioma a español

@@ -117,29 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="usr" xml:space="preserve">
-    <value>用户</value>
+  <data name="lbl_atiende" xml:space="preserve">
+    <value>服务人员：</value>
   </data>
-  <data name="team" xml:space="preserve">
-    <value>团队-11</value>
+  <data name="lbl_lang" xml:space="preserve">
+    <value>语言</value>
   </data>
   <data name="PagoAceptado" xml:space="preserve">
     <value>付款成功</value>
   </data>
-  <data name="login" xml:space="preserve">
-    <value>登录</value>
+  <data name="lbl_prodName" xml:space="preserve">
+    <value>产品名称</value>
   </data>
-  <data name="lbl_payWith" xml:space="preserve">
-    <value>支付方式：</value>
+  <data name="btn_tarjeta" xml:space="preserve">
+    <value>PLACEHOLDER</value>
   </data>
-  <data name="lbl_change" xml:space="preserve">
-    <value>找零</value>
+  <data name="btn_exit" xml:space="preserve">
+    <value>退出登录</value>
+  </data>
+  <data name="btn_productos" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="editAccept" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="btn_efectivo" xml:space="preserve">
+    <value>PLACEHOLDER</value>
+  </data>
+  <data name="btn_addProd" xml:space="preserve">
+    <value>添加产品</value>
+  </data>
+  <data name="lbl_prodId" xml:space="preserve">
+    <value>产品ID：</value>
   </data>
   <data name="lbl_card" xml:space="preserve">
     <value>插入卡片</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>本程序为教育和/或娱乐目的开发。&lt;br&gt;非营利性质，不侵犯任何实体版权。&lt;br&gt;所有使用内容归其各自所有者所有。&lt;br&gt;开发者不对应用程序的滥用负责。&lt;br&gt;使用本程序即表示您自行承担风险。</value>
+  <data name="btn_commit" xml:space="preserve">
+    <value>添加产品</value>
+  </data>
+  <data name="lbl_inv" xml:space="preserve">
+    <value>库存：</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="lbl_price" xml:space="preserve">
+    <value>价格：</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>应用程序创建者：</value>
+  </data>
+  <data name="lbl_newUsr" xml:space="preserve">
+    <value>创建新用户</value>
+  </data>
+  <data name="cbx_viewMine" xml:space="preserve">
+    <value>我的销售</value>
+  </data>
+  <data name="pwd" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="noPriv" xml:space="preserve">
+    <value>PLACEHOLDER</value>
   </data>
   <data name="formName" xml:space="preserve">
     <value>致谢</value>
@@ -147,106 +189,68 @@
   <data name="Error_NoEsSuficiente" xml:space="preserve">
     <value>付款不足</value>
   </data>
-  <data name="credits" xml:space="preserve">
-    <value>应用程序创建者：</value>
-  </data>
-  <data name="btn_checkout" xml:space="preserve">
-    <value>结账</value>
-  </data>
-  <data name="lbl_database" xml:space="preserve">
-    <value>数据库</value>
-  </data>
   <data name="btn_cambiarNombre" xml:space="preserve">
     <value>更改数据库</value>
-  </data>
-  <data name="lbl_lang" xml:space="preserve">
-    <value>语言</value>
-  </data>
-  <data name="pwd" xml:space="preserve">
-    <value>密码</value>
-  </data>
-  <data name="role" xml:space="preserve">
-    <value>角色</value>
-  </data>
-  <data name="lbl_newUsr" xml:space="preserve">
-    <value>创建新用户</value>
-  </data>
-  <data name="btn_createProfile" xml:space="preserve">
-    <value>创建个人资料</value>
-  </data>
-  <data name="lbl_alert" xml:space="preserve">
-    <value>注意：必须已创建数据库才能从MongoDB顺利查看产品</value>
-  </data>
-  <data name="cbx_viewMine" xml:space="preserve">
-    <value>我的销售</value>
-  </data>
-  <data name="btn_ventas" xml:space="preserve">
-    <value>关于</value>
-  </data>
-  <data name="btn_productos" xml:space="preserve">
-    <value>产品</value>
-  </data>
-  <data name="btn_conteo" xml:space="preserve">
-    <value>计数</value>
-  </data>
-  <data name="btn_config" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="btn_exit" xml:space="preserve">
-    <value>退出登录</value>
-  </data>
-  <data name="btn_add" xml:space="preserve">
-    <value>添加产品</value>
-  </data>
-  <data name="lbl_atiende" xml:space="preserve">
-    <value>服务人员：</value>
-  </data>
-  <data name="btn_cobrar" xml:space="preserve">
-    <value>收费</value>
-  </data>
-  <data name="lbl_total" xml:space="preserve">
-    <value>总计：</value>
-  </data>
-  <data name="lbl_prodName" xml:space="preserve">
-    <value>产品名称</value>
-  </data>
-  <data name="lbl_price" xml:space="preserve">
-    <value>价格：</value>
-  </data>
-  <data name="lbl_inv" xml:space="preserve">
-    <value>库存：</value>
-  </data>
-  <data name="lbl_prodId" xml:space="preserve">
-    <value>产品ID：</value>
-  </data>
-  <data name="btn_commit" xml:space="preserve">
-    <value>添加产品</value>
-  </data>
-  <data name="cbx_granel" xml:space="preserve">
-    <value>散装：</value>
   </data>
   <data name="lbl_noEncontrado" xml:space="preserve">
     <value>未找到该名称的产品\n在右侧添加产品</value>
   </data>
-  <data name="noPriv" xml:space="preserve">
-    <value>PLACEHOLDER</value>
-  </data>
-  <data name="btn_addProd" xml:space="preserve">
-    <value>添加产品</value>
-  </data>
-  <data name="btn_editProd" xml:space="preserve">
-    <value>PLACEHOLDER</value>
-  </data>
-  <data name="editAccept" xml:space="preserve">
-    <value>PLACEHOLDER</value>
+  <data name="btn_checkout" xml:space="preserve">
+    <value>结账</value>
   </data>
   <data name="addAccept" xml:space="preserve">
     <value>PLACEHOLDER</value>
   </data>
-  <data name="btn_efectivo" xml:space="preserve">
+  <data name="label3.Text" xml:space="preserve">
+    <value>本程序为教育和/或娱乐目的开发。&lt;br&gt;非营利性质，不侵犯任何实体版权。&lt;br&gt;所有使用内容归其各自所有者所有。&lt;br&gt;开发者不对应用程序的滥用负责。&lt;br&gt;使用本程序即表示您自行承担风险。</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>团队-11</value>
+  </data>
+  <data name="btn_cobrar" xml:space="preserve">
+    <value>收费</value>
+  </data>
+  <data name="lbl_alert" xml:space="preserve">
+    <value>注意：必须已创建数据库才能从MongoDB顺利查看产品</value>
+  </data>
+  <data name="lbl_change" xml:space="preserve">
+    <value>找零</value>
+  </data>
+  <data name="usr" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="btn_conteo" xml:space="preserve">
+    <value>计数</value>
+  </data>
+  <data name="btn_add" xml:space="preserve">
+    <value>添加产品</value>
+  </data>
+  <data name="btn_ventas" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="btn_createProfile" xml:space="preserve">
+    <value>创建个人资料</value>
+  </data>
+  <data name="btn_config" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="btn_editProd" xml:space="preserve">
     <value>PLACEHOLDER</value>
   </data>
-  <data name="btn_tarjeta" xml:space="preserve">
-    <value>PLACEHOLDER</value>
+  <data name="lbl_payWith" xml:space="preserve">
+    <value>支付方式：</value>
+  </data>
+  <data name="lbl_total" xml:space="preserve">
+    <value>总计：</value>
+  </data>
+  <data name="cbx_granel" xml:space="preserve">
+    <value>散装：</value>
+  </data>
+  <data name="lbl_database" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="iniciarsesion" xml:space="preserve">
+    <value>
+登入</value>
   </data>
 </root>

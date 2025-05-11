@@ -45,18 +45,20 @@
             // 
             // tbx_nombre
             // 
-            this.tbx_nombre.Location = new System.Drawing.Point(12, 55);
+            this.tbx_nombre.Location = new System.Drawing.Point(9, 45);
+            this.tbx_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbx_nombre.Name = "tbx_nombre";
-            this.tbx_nombre.Size = new System.Drawing.Size(327, 22);
+            this.tbx_nombre.Size = new System.Drawing.Size(246, 22);
             this.tbx_nombre.TabIndex = 0;
             this.tbx_nombre.TextChanged += new System.EventHandler(this.tbx_nombre_TextChanged);
             // 
             // lbl_prodName
             // 
             this.lbl_prodName.AutoSize = true;
-            this.lbl_prodName.Location = new System.Drawing.Point(108, 36);
+            this.lbl_prodName.Location = new System.Drawing.Point(81, 29);
+            this.lbl_prodName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_prodName.Name = "lbl_prodName";
-            this.lbl_prodName.Size = new System.Drawing.Size(134, 16);
+            this.lbl_prodName.Size = new System.Drawing.Size(118, 13);
             this.lbl_prodName.TabIndex = 1;
             this.lbl_prodName.Text = "Nombre del producto";
             // 
@@ -67,12 +69,13 @@
             this.dgv_productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_productos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_productos.Location = new System.Drawing.Point(10, 82);
+            this.dgv_productos.Location = new System.Drawing.Point(8, 67);
+            this.dgv_productos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_productos.Name = "dgv_productos";
             this.dgv_productos.ReadOnly = true;
             this.dgv_productos.RowHeadersWidth = 51;
             this.dgv_productos.RowTemplate.Height = 24;
-            this.dgv_productos.Size = new System.Drawing.Size(761, 477);
+            this.dgv_productos.Size = new System.Drawing.Size(571, 388);
             this.dgv_productos.TabIndex = 2;
             this.dgv_productos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_productos_CellContentClick);
             // 
@@ -80,9 +83,10 @@
             // 
             this.lbl_no_encontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_no_encontrado.AutoSize = true;
-            this.lbl_no_encontrado.Location = new System.Drawing.Point(337, 312);
+            this.lbl_no_encontrado.Location = new System.Drawing.Point(253, 254);
+            this.lbl_no_encontrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_no_encontrado.Name = "lbl_no_encontrado";
-            this.lbl_no_encontrado.Size = new System.Drawing.Size(44, 16);
+            this.lbl_no_encontrado.Size = new System.Drawing.Size(38, 13);
             this.lbl_no_encontrado.TabIndex = 3;
             this.lbl_no_encontrado.Text = "label2";
             this.lbl_no_encontrado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,50 +95,59 @@
             // lbl_price
             // 
             this.lbl_price.AutoSize = true;
-            this.lbl_price.Location = new System.Drawing.Point(777, 119);
+            this.lbl_price.Location = new System.Drawing.Point(583, 97);
+            this.lbl_price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(49, 16);
+            this.lbl_price.Size = new System.Drawing.Size(41, 13);
             this.lbl_price.TabIndex = 4;
             this.lbl_price.Text = "Precio:";
             // 
             // lbl_inv
             // 
             this.lbl_inv.AutoSize = true;
-            this.lbl_inv.Location = new System.Drawing.Point(777, 215);
+            this.lbl_inv.Location = new System.Drawing.Point(583, 175);
+            this.lbl_inv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_inv.Name = "lbl_inv";
-            this.lbl_inv.Size = new System.Drawing.Size(68, 16);
+            this.lbl_inv.Size = new System.Drawing.Size(62, 13);
             this.lbl_inv.TabIndex = 5;
             this.lbl_inv.Text = "Inventario:";
             // 
             // cbx_granel
             // 
             this.cbx_granel.AutoSize = true;
-            this.cbx_granel.Location = new System.Drawing.Point(780, 330);
+            this.cbx_granel.Location = new System.Drawing.Point(585, 268);
+            this.cbx_granel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbx_granel.Name = "cbx_granel";
-            this.cbx_granel.Size = new System.Drawing.Size(69, 20);
+            this.cbx_granel.Size = new System.Drawing.Size(60, 17);
             this.cbx_granel.TabIndex = 6;
             this.cbx_granel.Text = "Granel";
             this.cbx_granel.UseVisualStyleBackColor = true;
             // 
             // tbx_precio
             // 
-            this.tbx_precio.Location = new System.Drawing.Point(780, 138);
+            this.tbx_precio.Location = new System.Drawing.Point(585, 112);
+            this.tbx_precio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbx_precio.Name = "tbx_precio";
-            this.tbx_precio.Size = new System.Drawing.Size(167, 22);
+            this.tbx_precio.Size = new System.Drawing.Size(126, 22);
             this.tbx_precio.TabIndex = 7;
             // 
             // tbx_inv
             // 
-            this.tbx_inv.Location = new System.Drawing.Point(780, 234);
+            this.tbx_inv.Location = new System.Drawing.Point(585, 190);
+            this.tbx_inv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbx_inv.Name = "tbx_inv";
-            this.tbx_inv.Size = new System.Drawing.Size(167, 22);
+            this.tbx_inv.Size = new System.Drawing.Size(126, 22);
             this.tbx_inv.TabIndex = 8;
             // 
             // btn_commit
             // 
-            this.btn_commit.Location = new System.Drawing.Point(823, 443);
+            this.btn_commit.FlatAppearance.BorderSize = 0;
+            this.btn_commit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_commit.Image = global::ZapaVentas.Properties.Resources.button10;
+            this.btn_commit.Location = new System.Drawing.Point(617, 360);
+            this.btn_commit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_commit.Name = "btn_commit";
-            this.btn_commit.Size = new System.Drawing.Size(181, 79);
+            this.btn_commit.Size = new System.Drawing.Size(136, 64);
             this.btn_commit.TabIndex = 9;
             this.btn_commit.Text = "Agregar producto";
             this.btn_commit.UseVisualStyleBackColor = true;
@@ -143,24 +156,27 @@
             // lbl_prodId
             // 
             this.lbl_prodId.AutoSize = true;
-            this.lbl_prodId.Location = new System.Drawing.Point(853, 308);
+            this.lbl_prodId.Location = new System.Drawing.Point(640, 250);
+            this.lbl_prodId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_prodId.Name = "lbl_prodId";
-            this.lbl_prodId.Size = new System.Drawing.Size(77, 16);
+            this.lbl_prodId.Size = new System.Drawing.Size(71, 13);
             this.lbl_prodId.TabIndex = 10;
             this.lbl_prodId.Text = "Id producto:";
             // 
             // tbx_id_prod
             // 
-            this.tbx_id_prod.Location = new System.Drawing.Point(856, 327);
+            this.tbx_id_prod.Location = new System.Drawing.Point(642, 266);
+            this.tbx_id_prod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbx_id_prod.Name = "tbx_id_prod";
-            this.tbx_id_prod.Size = new System.Drawing.Size(180, 22);
+            this.tbx_id_prod.Size = new System.Drawing.Size(136, 22);
             this.tbx_id_prod.TabIndex = 11;
             // 
             // product_editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 572);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(786, 465);
             this.Controls.Add(this.tbx_id_prod);
             this.Controls.Add(this.lbl_prodId);
             this.Controls.Add(this.btn_commit);
@@ -173,8 +189,10 @@
             this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.lbl_prodName);
             this.Controls.Add(this.tbx_nombre);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "product_editor";
-            this.Text = "product_editor";
+            this.Text = "Editor de productos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.product_editor_FormClosed);
             this.Load += new System.EventHandler(this.product_editor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();

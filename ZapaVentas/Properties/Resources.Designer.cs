@@ -205,6 +205,106 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button1 {
+            get {
+                object obj = ResourceManager.GetObject("button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button10 {
+            get {
+                object obj = ResourceManager.GetObject("button10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button11 {
+            get {
+                object obj = ResourceManager.GetObject("button11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button2 {
+            get {
+                object obj = ResourceManager.GetObject("button2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button3 {
+            get {
+                object obj = ResourceManager.GetObject("button3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button4 {
+            get {
+                object obj = ResourceManager.GetObject("button4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button5 {
+            get {
+                object obj = ResourceManager.GetObject("button5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button6 {
+            get {
+                object obj = ResourceManager.GetObject("button6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button7 {
+            get {
+                object obj = ResourceManager.GetObject("button7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button8 {
+            get {
+                object obj = ResourceManager.GetObject("button8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Granel:.
         /// </summary>
         internal static string cbx_granel {
@@ -269,7 +369,20 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Este programa fue desarrollado con fines educativos y/o de entretenimiento.\nNo tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.\nTodo el contenido utilizado pertenece a sus respectivos propietarios.\nEl desarrollador no se responsabiliza por el uso indebido de esta aplicación.\nAl utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad..
+        ///   Busca una cadena traducida similar a Iniciar Sesíon.
+        /// </summary>
+        internal static string iniciarsesion {
+            get {
+                return ResourceManager.GetString("iniciarsesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Este programa fue desarrollado con fines educativos y/o de entretenimiento.
+        ///    No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.
+        ///    Todo el contenido utilizado pertenece a sus respectivos propietarios.
+        ///    El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
+        ///    Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad..
         /// </summary>
         internal static string label3_Text {
             get {
@@ -350,7 +463,8 @@ namespace ZapaVentas.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No se encontraron productos con ese nombre\n Añadir producto a la derecha.
+        ///   Busca una cadena traducida similar a No se encontraron productos con ese nombre
+        ///    Añadir producto a la derecha.
         /// </summary>
         internal static string lbl_noEncontrado {
             get {

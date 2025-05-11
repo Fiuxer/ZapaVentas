@@ -117,29 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="usr" xml:space="preserve">
-    <value>User</value>
+  <data name="lbl_atiende" xml:space="preserve">
+    <value>Assisted by:</value>
   </data>
-  <data name="team" xml:space="preserve">
-    <value>Team-11</value>
+  <data name="lbl_lang" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="PagoAceptado" xml:space="preserve">
     <value>Payment successful</value>
   </data>
-  <data name="login" xml:space="preserve">
-    <value>Log In</value>
+  <data name="lbl_prodName" xml:space="preserve">
+    <value>Product name</value>
   </data>
-  <data name="lbl_payWith" xml:space="preserve">
-    <value>Paid with:</value>
+  <data name="btn_tarjeta" xml:space="preserve">
+    <value>Card</value>
   </data>
-  <data name="lbl_change" xml:space="preserve">
-    <value>Change</value>
+  <data name="btn_exit" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="btn_productos" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="editAccept" xml:space="preserve">
+    <value>Product was edited correctly</value>
+  </data>
+  <data name="btn_efectivo" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="btn_addProd" xml:space="preserve">
+    <value>Add product</value>
+  </data>
+  <data name="lbl_prodId" xml:space="preserve">
+    <value>Product ID:</value>
   </data>
   <data name="lbl_card" xml:space="preserve">
     <value>Insert card</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>This program was developed for educational and/or entertainment purposes.&lt;br&gt;It is not for profit and does not intend to infringe on any entity's copyright.&lt;br&gt;All content used belongs to its respective owners.&lt;br&gt;The developer is not responsible for misuse of this application.&lt;br&gt;By using this program, you accept that you do so at your own responsibility.</value>
+  <data name="btn_commit" xml:space="preserve">
+    <value>Add product</value>
+  </data>
+  <data name="lbl_inv" xml:space="preserve">
+    <value>Inventory:</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="lbl_price" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>Application created by:</value>
+  </data>
+  <data name="lbl_newUsr" xml:space="preserve">
+    <value>Create new user</value>
+  </data>
+  <data name="cbx_viewMine" xml:space="preserve">
+    <value>My sales</value>
+  </data>
+  <data name="pwd" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="noPriv" xml:space="preserve">
+    <value>You don't have the privileges to access this section</value>
   </data>
   <data name="formName" xml:space="preserve">
     <value>Credits</value>
@@ -147,106 +189,67 @@
   <data name="Error_NoEsSuficiente" xml:space="preserve">
     <value>Payment is not sufficient</value>
   </data>
-  <data name="credits" xml:space="preserve">
-    <value>Application created by:</value>
-  </data>
-  <data name="btn_checkout" xml:space="preserve">
-    <value>Checkout</value>
-  </data>
-  <data name="lbl_database" xml:space="preserve">
-    <value>Database</value>
-  </data>
   <data name="btn_cambiarNombre" xml:space="preserve">
     <value>Change database</value>
-  </data>
-  <data name="lbl_lang" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="pwd" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="role" xml:space="preserve">
-    <value>Role</value>
-  </data>
-  <data name="lbl_newUsr" xml:space="preserve">
-    <value>Create new user</value>
-  </data>
-  <data name="btn_createProfile" xml:space="preserve">
-    <value>Create profile</value>
-  </data>
-  <data name="lbl_alert" xml:space="preserve">
-    <value>WARNING: You need to have the database already created to view products from MongoDB without issues</value>
-  </data>
-  <data name="cbx_viewMine" xml:space="preserve">
-    <value>My sales</value>
-  </data>
-  <data name="btn_ventas" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="btn_productos" xml:space="preserve">
-    <value>Products</value>
-  </data>
-  <data name="btn_conteo" xml:space="preserve">
-    <value>Count</value>
-  </data>
-  <data name="btn_config" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="btn_exit" xml:space="preserve">
-    <value>Log Out</value>
-  </data>
-  <data name="btn_add" xml:space="preserve">
-    <value>Add product</value>
-  </data>
-  <data name="lbl_atiende" xml:space="preserve">
-    <value>Assisted by:</value>
-  </data>
-  <data name="btn_cobrar" xml:space="preserve">
-    <value>Charge</value>
-  </data>
-  <data name="lbl_total" xml:space="preserve">
-    <value>Total:</value>
-  </data>
-  <data name="lbl_prodName" xml:space="preserve">
-    <value>Product name</value>
-  </data>
-  <data name="lbl_price" xml:space="preserve">
-    <value>Price:</value>
-  </data>
-  <data name="lbl_inv" xml:space="preserve">
-    <value>Inventory:</value>
-  </data>
-  <data name="lbl_prodId" xml:space="preserve">
-    <value>Product ID:</value>
-  </data>
-  <data name="btn_commit" xml:space="preserve">
-    <value>Add product</value>
-  </data>
-  <data name="cbx_granel" xml:space="preserve">
-    <value>Bulk:</value>
   </data>
   <data name="lbl_noEncontrado" xml:space="preserve">
     <value>No products found with that name\nAdd product to the right</value>
   </data>
-  <data name="noPriv" xml:space="preserve">
-    <value>You don't have the privileges to access this section</value>
-  </data>
-  <data name="btn_addProd" xml:space="preserve">
-    <value>Add product</value>
-  </data>
-  <data name="btn_editProd" xml:space="preserve">
-    <value>Edit product</value>
-  </data>
-  <data name="editAccept" xml:space="preserve">
-    <value>Product was edited correctly</value>
+  <data name="btn_checkout" xml:space="preserve">
+    <value>Checkout</value>
   </data>
   <data name="addAccept" xml:space="preserve">
     <value>Product was added correctly</value>
   </data>
-  <data name="btn_efectivo" xml:space="preserve">
-    <value>Cash</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>This program was developed for educational and/or entertainment purposes.&lt;br&gt;It is not for profit and does not intend to infringe on any entity's copyright.&lt;br&gt;All content used belongs to its respective owners.&lt;br&gt;The developer is not responsible for misuse of this application.&lt;br&gt;By using this program, you accept that you do so at your own responsibility.</value>
   </data>
-  <data name="btn_tarjeta" xml:space="preserve">
-    <value>Card</value>
+  <data name="team" xml:space="preserve">
+    <value>Team-11</value>
+  </data>
+  <data name="btn_cobrar" xml:space="preserve">
+    <value>Charge</value>
+  </data>
+  <data name="lbl_alert" xml:space="preserve">
+    <value>WARNING: You need to have the database already created to view products from MongoDB without issues</value>
+  </data>
+  <data name="lbl_change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="usr" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="btn_conteo" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="btn_add" xml:space="preserve">
+    <value>Add product</value>
+  </data>
+  <data name="btn_ventas" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="btn_createProfile" xml:space="preserve">
+    <value>Create profile</value>
+  </data>
+  <data name="btn_config" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="btn_editProd" xml:space="preserve">
+    <value>Edit product</value>
+  </data>
+  <data name="lbl_payWith" xml:space="preserve">
+    <value>Paid with:</value>
+  </data>
+  <data name="lbl_total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="cbx_granel" xml:space="preserve">
+    <value>Bulk:</value>
+  </data>
+  <data name="lbl_database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="iniciarsesion" xml:space="preserve">
+    <value>Login</value>
   </data>
 </root>

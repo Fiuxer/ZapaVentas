@@ -117,129 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MainBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainBG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ConteoBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ConteoBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usr" xml:space="preserve">
-    <value>Usuario</value>
-  </data>
-  <data name="team" xml:space="preserve">
-    <value>Equipo-11</value>
-  </data>
-  <data name="PagoAceptado" xml:space="preserve">
-    <value>Pago realizado con exito</value>
-  </data>
-  <data name="login" xml:space="preserve">
-    <value>Iniciar Sesión</value>
-  </data>
-  <data name="lbl_payWith" xml:space="preserve">
-    <value>Pagó con:</value>
-  </data>
-  <data name="lbl_change" xml:space="preserve">
-    <value>Cambio</value>
-  </data>
-  <data name="lbl_card" xml:space="preserve">
-    <value>Insertar tarjeta</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Este programa fue desarrollado con fines educativos y/o de entretenimiento.\nNo tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.\nTodo el contenido utilizado pertenece a sus respectivos propietarios.\nEl desarrollador no se responsabiliza por el uso indebido de esta aplicación.\nAl utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad.</value>
-  </data>
-  <data name="formName" xml:space="preserve">
-    <value>Créditos</value>
-  </data>
-  <data name="Error_NoEsSuficiente" xml:space="preserve">
-    <value>El pago no es suficiente</value>
-  </data>
-  <data name="credits" xml:space="preserve">
-    <value>Aplicación creada por:</value>
-  </data>
-  <data name="btn_checkout" xml:space="preserve">
-    <value>Cobrar</value>
-  </data>
-  <data name="lbl_database" xml:space="preserve">
-    <value>Base de datos</value>
-  </data>
-  <data name="btn_cambiarNombre" xml:space="preserve">
-    <value>Cambiar base</value>
-  </data>
-  <data name="lbl_lang" xml:space="preserve">
-    <value>Idioma</value>
-  </data>
-  <data name="pwd" xml:space="preserve">
-    <value>Contraseña</value>
-  </data>
-  <data name="role" xml:space="preserve">
-    <value>Rol</value>
-  </data>
-  <data name="lbl_newUsr" xml:space="preserve">
-    <value>Crear nuevo usuario</value>
-  </data>
-  <data name="btn_createProfile" xml:space="preserve">
-    <value>Crear perfil</value>
-  </data>
-  <data name="lbl_alert" xml:space="preserve">
-    <value>ATENCION: Se ocupa tener la base de datos ya creada para poder ver los productos desde MongoDB sin problemas</value>
-  </data>
-  <data name="cbx_viewMine" xml:space="preserve">
-    <value>Mis ventas</value>
-  </data>
-  <data name="btn_ventas" xml:space="preserve">
-    <value>Acerca</value>
+  <data name="lbl_atiende" xml:space="preserve">
+    <value>Le atiende:</value>
   </data>
   <data name="btn_productos" xml:space="preserve">
     <value>Productos</value>
   </data>
-  <data name="btn_conteo" xml:space="preserve">
-    <value>Conteo</value>
+  <data name="lbl_lang" xml:space="preserve">
+    <value>Idioma</value>
   </data>
-  <data name="btn_config" xml:space="preserve">
-    <value>Configuración</value>
-  </data>
-  <data name="btn_exit" xml:space="preserve">
-    <value>Cerrar Sesión</value>
-  </data>
-  <data name="btn_add" xml:space="preserve">
-    <value>Agregar producto</value>
-  </data>
-  <data name="lbl_atiende" xml:space="preserve">
-    <value>Le atiende:</value>
-  </data>
-  <data name="btn_cobrar" xml:space="preserve">
-    <value>Cobrar</value>
-  </data>
-  <data name="lbl_total" xml:space="preserve">
-    <value>Total:</value>
+  <data name="PagoAceptado" xml:space="preserve">
+    <value>Pago realizado con exito</value>
   </data>
   <data name="lbl_prodName" xml:space="preserve">
     <value>Nombre del producto</value>
   </data>
-  <data name="lbl_price" xml:space="preserve">
-    <value>Precio:</value>
+  <data name="btn_createProfile" xml:space="preserve">
+    <value>Crear perfil</value>
   </data>
-  <data name="lbl_inv" xml:space="preserve">
-    <value>Inventario:</value>
+  <data name="btn_tarjeta" xml:space="preserve">
+    <value>Tarjeta</value>
   </data>
-  <data name="lbl_prodId" xml:space="preserve">
-    <value>Id del producto:</value>
+  <data name="iniciarsesion" xml:space="preserve">
+    <value>Iniciar Sesíon</value>
   </data>
-  <data name="btn_commit" xml:space="preserve">
-    <value>Agregar producto</value>
-  </data>
-  <data name="cbx_granel" xml:space="preserve">
-    <value>Granel:</value>
-  </data>
-  <data name="lbl_noEncontrado" xml:space="preserve">
-    <value>No se encontraron productos con ese nombre\n Añadir producto a la derecha</value>
-  </data>
-  <data name="noPriv" xml:space="preserve">
-    <value>No tienes los privilegios para acceder a esta sección</value>
-  </data>
-  <data name="btn_addProd" xml:space="preserve">
-    <value>Agregar producto</value>
+  <data name="btn_exit" xml:space="preserve">
+    <value>Cerrar Sesión</value>
   </data>
   <data name="btn_editProd" xml:space="preserve">
     <value>Editar producto</value>
@@ -247,13 +150,148 @@
   <data name="editAccept" xml:space="preserve">
     <value>Producto editado correctamente</value>
   </data>
-  <data name="addAccept" xml:space="preserve">
-    <value>Producto agregado correctamente</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_efectivo" xml:space="preserve">
     <value>Efectivo</value>
   </data>
-  <data name="btn_tarjeta" xml:space="preserve">
-    <value>Tarjeta</value>
+  <data name="MainBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainBG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_addProd" xml:space="preserve">
+    <value>Agregar producto</value>
+  </data>
+  <data name="lbl_prodId" xml:space="preserve">
+    <value>Id del producto:</value>
+  </data>
+  <data name="lbl_card" xml:space="preserve">
+    <value>Insertar tarjeta</value>
+  </data>
+  <data name="btn_commit" xml:space="preserve">
+    <value>Agregar producto</value>
+  </data>
+  <data name="button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lbl_inv" xml:space="preserve">
+    <value>Inventario:</value>
+  </data>
+  <data name="role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="lbl_price" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="button7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lbl_newUsr" xml:space="preserve">
+    <value>Crear nuevo usuario</value>
+  </data>
+  <data name="cbx_viewMine" xml:space="preserve">
+    <value>Mis ventas</value>
+  </data>
+  <data name="pwd" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="noPriv" xml:space="preserve">
+    <value>No tienes los privilegios para acceder a esta sección</value>
+  </data>
+  <data name="formName" xml:space="preserve">
+    <value>Créditos</value>
+  </data>
+  <data name="Error_NoEsSuficiente" xml:space="preserve">
+    <value>El pago no es suficiente</value>
+  </data>
+  <data name="btn_cambiarNombre" xml:space="preserve">
+    <value>Cambiar base</value>
+  </data>
+  <data name="button8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lbl_noEncontrado" xml:space="preserve">
+    <value>No se encontraron productos con ese nombre
+    Añadir producto a la derecha</value>
+  </data>
+  <data name="btn_checkout" xml:space="preserve">
+    <value>Cobrar</value>
+  </data>
+  <data name="addAccept" xml:space="preserve">
+    <value>Producto agregado correctamente</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Este programa fue desarrollado con fines educativos y/o de entretenimiento.
+    No tiene fines de lucro ni pretende infringir los derechos de autor de ninguna entidad.
+    Todo el contenido utilizado pertenece a sus respectivos propietarios.
+    El desarrollador no se responsabiliza por el uso indebido de esta aplicación.
+    Al utilizar este programa, aceptas que lo haces bajo tu propia responsabilidad.</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Equipo-11</value>
+  </data>
+  <data name="btn_cobrar" xml:space="preserve">
+    <value>Cobrar</value>
+  </data>
+  <data name="lbl_alert" xml:space="preserve">
+    <value>ATENCION: Se ocupa tener la base de datos ya creada para poder ver los productos desde MongoDB sin problemas</value>
+  </data>
+  <data name="lbl_change" xml:space="preserve">
+    <value>Cambio</value>
+  </data>
+  <data name="usr" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="btn_conteo" xml:space="preserve">
+    <value>Conteo</value>
+  </data>
+  <data name="btn_add" xml:space="preserve">
+    <value>Agregar producto</value>
+  </data>
+  <data name="button3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_ventas" xml:space="preserve">
+    <value>Acerca</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>Aplicación creada por:</value>
+  </data>
+  <data name="ConteoBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConteoBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_config" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lbl_payWith" xml:space="preserve">
+    <value>Pagó con:</value>
+  </data>
+  <data name="lbl_total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="cbx_granel" xml:space="preserve">
+    <value>Granel:</value>
+  </data>
+  <data name="lbl_database" xml:space="preserve">
+    <value>Base de datos</value>
+  </data>
+  <data name="button11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

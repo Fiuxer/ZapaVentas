@@ -39,6 +39,7 @@
             this.lbl_unitPrice = new System.Windows.Forms.Label();
             this.nud_granel = new System.Windows.Forms.NumericUpDown();
             this.lbl_granQuant = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.pnl_cantidad_envasado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_cantidad)).BeginInit();
@@ -49,7 +50,7 @@
             // tbx_nombre
             // 
             this.tbx_nombre.Location = new System.Drawing.Point(30, 54);
-            this.tbx_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_nombre.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_nombre.Name = "tbx_nombre";
             this.tbx_nombre.Size = new System.Drawing.Size(172, 20);
             this.tbx_nombre.TabIndex = 0;
@@ -57,18 +58,20 @@
             // lbl_prodName
             // 
             this.lbl_prodName.AutoSize = true;
-            this.lbl_prodName.Location = new System.Drawing.Point(65, 38);
+            this.lbl_prodName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prodName.Location = new System.Drawing.Point(48, 39);
             this.lbl_prodName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_prodName.Name = "lbl_prodName";
-            this.lbl_prodName.Size = new System.Drawing.Size(106, 13);
+            this.lbl_prodName.Size = new System.Drawing.Size(118, 13);
             this.lbl_prodName.TabIndex = 1;
             this.lbl_prodName.Text = "Nombre del producto";
             // 
             // dgv_productos
             // 
+            this.dgv_productos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_productos.Location = new System.Drawing.Point(9, 76);
-            this.dgv_productos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_productos.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_productos.Name = "dgv_productos";
             this.dgv_productos.ReadOnly = true;
             this.dgv_productos.RowHeadersWidth = 51;
@@ -82,7 +85,7 @@
             this.pnl_cantidad_envasado.Controls.Add(this.nud_cantidad);
             this.pnl_cantidad_envasado.Controls.Add(this.label2);
             this.pnl_cantidad_envasado.Location = new System.Drawing.Point(100, 91);
-            this.pnl_cantidad_envasado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_cantidad_envasado.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_cantidad_envasado.Name = "pnl_cantidad_envasado";
             this.pnl_cantidad_envasado.Size = new System.Drawing.Size(406, 238);
             this.pnl_cantidad_envasado.TabIndex = 3;
@@ -91,7 +94,7 @@
             // nud_cantidad
             // 
             this.nud_cantidad.Location = new System.Drawing.Point(157, 97);
-            this.nud_cantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nud_cantidad.Margin = new System.Windows.Forms.Padding(2);
             this.nud_cantidad.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -129,7 +132,7 @@
             this.pnl_granel.Controls.Add(this.nud_granel);
             this.pnl_granel.Controls.Add(this.lbl_granQuant);
             this.pnl_granel.Location = new System.Drawing.Point(100, 92);
-            this.pnl_granel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_granel.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_granel.Name = "pnl_granel";
             this.pnl_granel.Size = new System.Drawing.Size(406, 238);
             this.pnl_granel.TabIndex = 4;
@@ -138,7 +141,7 @@
             // lbl_ppk
             // 
             this.lbl_ppk.AutoSize = true;
-            this.lbl_ppk.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
+            this.lbl_ppk.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ppk.Location = new System.Drawing.Point(175, 68);
             this.lbl_ppk.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ppk.Name = "lbl_ppk";
@@ -149,10 +152,11 @@
             // lbl_unitPrice
             // 
             this.lbl_unitPrice.AutoSize = true;
-            this.lbl_unitPrice.Location = new System.Drawing.Point(178, 36);
+            this.lbl_unitPrice.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_unitPrice.Location = new System.Drawing.Point(173, 32);
             this.lbl_unitPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_unitPrice.Name = "lbl_unitPrice";
-            this.lbl_unitPrice.Size = new System.Drawing.Size(74, 13);
+            this.lbl_unitPrice.Size = new System.Drawing.Size(82, 13);
             this.lbl_unitPrice.TabIndex = 2;
             this.lbl_unitPrice.Text = "Precio unitario";
             // 
@@ -164,7 +168,7 @@
             0,
             65536});
             this.nud_granel.Location = new System.Drawing.Point(170, 171);
-            this.nud_granel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nud_granel.Margin = new System.Windows.Forms.Padding(2);
             this.nud_granel.Minimum = new decimal(new int[] {
             1,
             0,
@@ -184,25 +188,40 @@
             // lbl_granQuant
             // 
             this.lbl_granQuant.AutoSize = true;
-            this.lbl_granQuant.Location = new System.Drawing.Point(179, 149);
+            this.lbl_granQuant.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_granQuant.Location = new System.Drawing.Point(173, 156);
             this.lbl_granQuant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_granQuant.Name = "lbl_granQuant";
-            this.lbl_granQuant.Size = new System.Drawing.Size(73, 13);
+            this.lbl_granQuant.Size = new System.Drawing.Size(79, 13);
             this.lbl_granQuant.TabIndex = 0;
             this.lbl_granQuant.Text = "Cantidad (kg):";
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.White;
+            this.lbl_title.Location = new System.Drawing.Point(12, 2);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(210, 37);
+            this.lbl_title.TabIndex = 26;
+            this.lbl_title.Text = "Añadir Producto";
             // 
             // add_prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.pnl_granel);
             this.Controls.Add(this.pnl_cantidad_envasado);
             this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.lbl_prodName);
             this.Controls.Add(this.tbx_nombre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "add_prod";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Añadir Producto";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.add_prod_FormClosed);
             this.Load += new System.EventHandler(this.add_prod_Load);
@@ -231,5 +250,6 @@
         private System.Windows.Forms.Label lbl_unitPrice;
         private System.Windows.Forms.NumericUpDown nud_granel;
         private System.Windows.Forms.Label lbl_granQuant;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

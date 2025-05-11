@@ -250,7 +250,9 @@
     <EmbeddedResource Include="product_editor.resx">
       <DependentUpon>product_editor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.de-DE.resx" />
+    <EmbeddedResource Include="Properties\Resources.de-DE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.en-US.resx" />
     <EmbeddedResource Include="Properties\Resources.fr.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -285,6 +287,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\button1.png" />
+    <None Include="Resources\button2.png" />
+    <None Include="Resources\button4.png" />
+    <None Include="Resources\button3.png" />
+    <None Include="Resources\button5.png" />
+    <None Include="Resources\button6.png" />
+    <None Include="Resources\button7.png" />
+    <None Include="Resources\button8.png" />
+    <None Include="Resources\button10.png" />
+    <None Include="Resources\button11.png" />
     <Content Include="Resources\ConteoBG.png" />
     <None Include="Resources\MainBG1.png" />
   </ItemGroup>
