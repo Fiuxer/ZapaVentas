@@ -25,6 +25,7 @@ namespace ZapaVentas
 
         private void creditos_Load(object sender, EventArgs e)
         {
+            // Carga las traducciones de los textos.
             label3.Text = Resources.label3_Text;
             label1.Text = Resources.credits;
         }

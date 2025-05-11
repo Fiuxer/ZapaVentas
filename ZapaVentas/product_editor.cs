@@ -16,6 +16,7 @@ namespace ZapaVentas
 {
     public partial class product_editor : Form
     {
+        // Clase de los productos, para poder editarlos mas facil.
         public class producto
         {
             public ObjectId id { get; set; }
@@ -87,6 +88,7 @@ namespace ZapaVentas
 
         private void product_editor_FormClosed(object sender, FormClosedEventArgs e)
         {
+            // Cuando se cierra el form, regresa al formulario principal
             main form1 = new main();
             form1.Show();
         }

@@ -21,14 +21,14 @@ namespace ZapaVentas
             InitializeComponent();
         }
 
-        public class Producto
+        public class Producto // Clase para leer los productos mas facil
         {
             public string nombre { get; set; }
             public double precio { get; set; }
             public int cant { get; set; }
         }
 
-        public class Venta
+        public class Venta // Clase para leer las ventas mas facil
         {
             public ObjectId id { get; set; }
             public DateTime fecha { get; set; }
@@ -44,34 +44,37 @@ namespace ZapaVentas
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<Venta>("ventas");
-
+            // Reinicia el filtro
             var filter = Builders<Venta>.Filter.Empty;
 
             if (cbx_view_mine.Checked)
             {
-                filter = Builders<Venta>.Filter.Eq(u => u.usuario, Global.usr);
+                filter = Builders<Venta>.Filter.Eq(u => u.usuario, Global.usr); // Filtro para ver solo las ventas del usuario
             }
 
-            var result = collection.Find(filter);
+            var result = collection.Find(filter); // Busca todas las ventas en la base de datos
 
+            // Carga los datos obtenidos en el DataGridView
             dgv_conteo.DataSource = result.ToList();
             dgv_conteo.Columns["id"].Visible = false;
         }
         private void conteo_Load(object sender, EventArgs e)
         {
             reload();
-
+            // Carga las traducciones de los textos.
             cbx_view_mine.Text = Resources.cbx_viewMine;
         }
 
         private void conteo_FormClosed(object sender, FormClosedEventArgs e)
         {
+            // Si se cierra el form, entonces vuelve a abrir el form principal
             Form main = new main();
             main.Show();
         }
 
         private void cbx_view_mine_CheckedChanged(object sender, EventArgs e)
         {
+            // Si se cambia el checkbox, entonces recarga el DataGridView
             reload();
         }
     }

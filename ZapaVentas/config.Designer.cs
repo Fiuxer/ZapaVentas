@@ -189,7 +189,7 @@
             this.cmb_rol.Name = "cmb_rol";
             this.cmb_rol.Size = new System.Drawing.Size(92, 21);
             this.cmb_rol.TabIndex = 13;
-            this.cmb_rol.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            
             // 
             // lbl_title
             // 

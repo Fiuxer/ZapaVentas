@@ -33,8 +33,9 @@ namespace ZapaVentas
 
         private void config_Load(object sender, EventArgs e)
         {
+            // Carga el nombre de la base de datos.
             tbx_database_name.Text = Global.databaseName;
-
+            // Carga las traducciones de los textos.
             lbl_alert.Text = Resources.lbl_alert;
             lbl_newUsr.Text = Resources.lbl_newUsr;
             lbl_pwd.Text = Resources.pwd;
@@ -45,8 +46,9 @@ namespace ZapaVentas
 
         private void tbx_database_name_TextChanged(object sender, EventArgs e)
         {
-            if (tbx_database_name.Text != Global.databaseName)
+            if (tbx_database_name.Text != Global.databaseName) // 
             {
+                // Si el nombre de la base de datos es diferente al actual, entonces muestra el botón de cambiar nombre.
                 btn_cambiar_nombre.Visible = true;
                 lbl_alert.Visible = true;
             }
@@ -54,11 +56,11 @@ namespace ZapaVentas
 
         private void btn_cambiar_nombre_Click(object sender, EventArgs e)
         {
-            string lastDatabaseName = Global.databaseName;
-            try
+            string lastDatabaseName = Global.databaseName; // Guarda el nombre de la base de datos actual.
+            try // Intenta cambiar el nombre de la base de datos.
             {
                 Global.databaseName = tbx_database_name.Text;
-
+                // Conectar a la base de datos
                 var connectionString = "mongodb://localhost:27017";
                 var client = new MongoClient(connectionString);
                 var database = client.GetDatabase(Global.databaseName);
@@ -68,88 +70,63 @@ namespace ZapaVentas
                 var filter = Builders<Usuario>.Filter.Eq(u => u.usr, "admin");
                 var result = collection.Find(filter).FirstOrDefault();
 
-                if (result == null)
+                if (result == null) // Si no existe el usuario admin, entonces lo crea
                 {
-                    var adminUser = new Usuario
+                    var adminUser = new Usuario // Crear un nuevo usuario admin por defecto
                     {
                         usr = "admin",
                         pwd = "1234",
                         privilege = 1
                     };
 
-                    collection.InsertOne(adminUser);
+                    collection.InsertOne(adminUser); // Inserta el usuario admin en la colección
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception ex) // Si hubo un error al cambiar el nombre de la base de datos, entonces muestra un mensaje de error.
             {
                 MessageBox.Show("Error al cambiar el nombre de la base de datos: " + ex.Message);
                 // Si hubo un error, revertir el nombre de la base de datos
                 Global.databaseName = lastDatabaseName;
             }
-            finally
+            finally // Ya una vez terminado, vuelve a ocultar los botones.
             {
                 btn_cambiar_nombre.Visible = false;
                 lbl_alert.Visible = false;
             }
         }
 
-        private void btn_create_profile_Click(object sender, EventArgs e)
+        private void btn_create_profile_Click(object sender, EventArgs e) // Crea un nuevo perfil de usuario
         {
+            // Conectar a la base de datos
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<Usuario>("usuarios");
 
-            var newUser = new Usuario
+            var newUser = new Usuario // Crear un nuevo usuario
             {
                 usr = tbx_usr.Text,
                 pwd = tbx_pwd.Text,
                 privilege = Convert.ToInt32(cmb_rol.SelectedIndex) + 1
             };
 
+            // Verificar si el usuario ya existe
             var filter = Builders<Usuario>.Filter.Eq(u => u.usr, newUser.usr);
             var result = collection.Find(filter).FirstOrDefault();
 
-            if (result == null)
+            if (result == null) // Si no existe el usuario, entonces lo agrega
             {
                 collection.InsertOne(newUser);
                 MessageBox.Show("Usuario creado exitosamente");
             }
-            else
+            else // Si existe el usuario, entonces muestra un mensaje de error
             {
                 MessageBox.Show("El usuario ya existe");
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_es_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
-        }
-
-        private void btn_en_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-        }
-
-        private void btn_de_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
-        }
-
-        private void btn_fr_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
-        }
-
-        private void btn_zn_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
-        }
+ 
+        
     }
 }

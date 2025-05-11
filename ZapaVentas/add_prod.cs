@@ -28,8 +28,9 @@ namespace ZapaVentas
 
         private void add_prod_Load(object sender, EventArgs e)
         {
-
+            // Recarga el DataGridView
             reload_dgv();
+            // Carga las traducciones de los textos.
             lbl_granQuant.Text = Resources.lbl_price;
             lbl_prodName.Text = Resources.lbl_prodName;
             lbl_unitPrice.Text = Resources.lbl_price;
@@ -97,22 +98,24 @@ namespace ZapaVentas
             // Al presionar Enter, se guarda el producto en la lista de productos
             if (e.KeyChar == (char)Keys.Enter) {
                 cantidad = (int)nud_cantidad.Value;
-
+                // Si hay inventario suficiente, se guarda el producto en la lista de productos
                 if (inv >= cantidad)
                 {
                     var compra = new Producto
                     {
+                        // Guarda los datos del item
                         id_prod = nombre,
                         nombre = nombre,
                         precio = 0,
                         granel = false,
                         inv = cantidad
                     };
-
+                    // Agrega el producto a la lista de compra
                     Global.productos.Add(compra);
-
+                    // Cierra el form
                     this.Close();
-                } else
+                }
+                else // Si no hay inventario suficiente, muestra un mensaje
                 {
                     MessageBox.Show("No hay inventario suficiente");
                 }
@@ -120,10 +123,7 @@ namespace ZapaVentas
             }
         }
 
-        private void add_prod_FormClosed(object sender, FormClosedEventArgs e)
-        {
 
-        }
 
         private void numericUpDown1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -154,11 +154,12 @@ namespace ZapaVentas
 
         private void nud_granel_ValueChanged(object sender, EventArgs e)
         {
+            // Al cambiar el valor del NumericUpDown, se busca el precio del producto
             var connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(Global.databaseName);
             var collection = database.GetCollection<Producto>("productos");
-
+            // Busca el producto en la base de datos
             var filter = Builders<Producto>.Filter.Eq(u => u.nombre, nombre);
             var result = collection.Find(filter).FirstOrDefault();
 
