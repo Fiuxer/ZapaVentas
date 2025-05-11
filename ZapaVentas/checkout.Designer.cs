@@ -54,7 +54,7 @@
             this.lbl_total.Location = new System.Drawing.Point(178, 93);
             this.lbl_total.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(120, 54);
+            this.lbl_total.Size = new System.Drawing.Size(149, 67);
             this.lbl_total.TabIndex = 0;
             this.lbl_total.Text = "Total:";
             // 
@@ -102,7 +102,7 @@
             this.lbl_total_efectivo.Location = new System.Drawing.Point(225, 66);
             this.lbl_total_efectivo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total_efectivo.Name = "lbl_total_efectivo";
-            this.lbl_total_efectivo.Size = new System.Drawing.Size(130, 54);
+            this.lbl_total_efectivo.Size = new System.Drawing.Size(160, 67);
             this.lbl_total_efectivo.TabIndex = 5;
             this.lbl_total_efectivo.Text = "label3";
             // 
@@ -123,7 +123,7 @@
             this.tbx_change.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_change.Name = "tbx_change";
             this.tbx_change.ReadOnly = true;
-            this.tbx_change.Size = new System.Drawing.Size(91, 22);
+            this.tbx_change.Size = new System.Drawing.Size(91, 26);
             this.tbx_change.TabIndex = 10;
             this.tbx_change.TabStop = false;
             // 
@@ -138,7 +138,7 @@
             0,
             0});
             this.nud_pago.Name = "nud_pago";
-            this.nud_pago.Size = new System.Drawing.Size(90, 22);
+            this.nud_pago.Size = new System.Drawing.Size(90, 26);
             this.nud_pago.TabIndex = 1;
             this.nud_pago.ThousandsSeparator = true;
             this.nud_pago.ValueChanged += new System.EventHandler(this.nud_pago_ValueChanged);
@@ -150,7 +150,7 @@
             this.lbl_change.Location = new System.Drawing.Point(214, 185);
             this.lbl_change.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_change.Name = "lbl_change";
-            this.lbl_change.Size = new System.Drawing.Size(49, 13);
+            this.lbl_change.Size = new System.Drawing.Size(59, 19);
             this.lbl_change.TabIndex = 1;
             this.lbl_change.Text = "Cambio:";
             // 
@@ -160,14 +160,14 @@
             this.lbl_payWith.Location = new System.Drawing.Point(203, 156);
             this.lbl_payWith.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_payWith.Name = "lbl_payWith";
-            this.lbl_payWith.Size = new System.Drawing.Size(61, 13);
+            this.lbl_payWith.Size = new System.Drawing.Size(73, 19);
             this.lbl_payWith.TabIndex = 0;
             this.lbl_payWith.Text = "Pagó con: ";
             // 
             // pnl_card
             // 
             this.pnl_card.Controls.Add(this.lbl_card);
-            this.pnl_card.Location = new System.Drawing.Point(133, -3);
+            this.pnl_card.Location = new System.Drawing.Point(123, 45);
             this.pnl_card.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_card.Name = "pnl_card";
             this.pnl_card.Size = new System.Drawing.Size(341, 284);
@@ -180,7 +180,7 @@
             this.lbl_card.Location = new System.Drawing.Point(134, 130);
             this.lbl_card.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_card.Name = "lbl_card";
-            this.lbl_card.Size = new System.Drawing.Size(82, 13);
+            this.lbl_card.Size = new System.Drawing.Size(99, 19);
             this.lbl_card.TabIndex = 0;
             this.lbl_card.Text = "Insertar tarjeta";
             // 
@@ -191,7 +191,7 @@
             // 
             // checkout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(600, 366);

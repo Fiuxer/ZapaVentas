@@ -47,7 +47,7 @@
             this.tbx_usr.Location = new System.Drawing.Point(260, 112);
             this.tbx_usr.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_usr.Name = "tbx_usr";
-            this.tbx_usr.Size = new System.Drawing.Size(76, 22);
+            this.tbx_usr.Size = new System.Drawing.Size(76, 26);
             this.tbx_usr.TabIndex = 0;
             this.tbx_usr.Text = "Usuario";
             // 
@@ -57,7 +57,7 @@
             this.tbx_pwd.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_pwd.Name = "tbx_pwd";
             this.tbx_pwd.PasswordChar = '*';
-            this.tbx_pwd.Size = new System.Drawing.Size(76, 22);
+            this.tbx_pwd.Size = new System.Drawing.Size(76, 26);
             this.tbx_pwd.TabIndex = 1;
             // 
             // btn_login
@@ -80,10 +80,10 @@
             this.btn_zn.FlatAppearance.BorderSize = 0;
             this.btn_zn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_zn.Image = ((System.Drawing.Image)(resources.GetObject("btn_zn.Image")));
-            this.btn_zn.Location = new System.Drawing.Point(521, 337);
+            this.btn_zn.Location = new System.Drawing.Point(521, 322);
             this.btn_zn.Margin = new System.Windows.Forms.Padding(2);
             this.btn_zn.Name = "btn_zn";
-            this.btn_zn.Size = new System.Drawing.Size(70, 19);
+            this.btn_zn.Size = new System.Drawing.Size(70, 34);
             this.btn_zn.TabIndex = 24;
             this.btn_zn.Text = "中文";
             this.btn_zn.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             this.btn_fr.FlatAppearance.BorderSize = 0;
             this.btn_fr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_fr.Image = ((System.Drawing.Image)(resources.GetObject("btn_fr.Image")));
-            this.btn_fr.Location = new System.Drawing.Point(521, 290);
+            this.btn_fr.Location = new System.Drawing.Point(521, 275);
             this.btn_fr.Margin = new System.Windows.Forms.Padding(2);
             this.btn_fr.Name = "btn_fr";
-            this.btn_fr.Size = new System.Drawing.Size(70, 19);
+            this.btn_fr.Size = new System.Drawing.Size(70, 34);
             this.btn_fr.TabIndex = 23;
             this.btn_fr.Text = "Français";
             this.btn_fr.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             this.btn_de.FlatAppearance.BorderSize = 0;
             this.btn_de.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_de.Image = ((System.Drawing.Image)(resources.GetObject("btn_de.Image")));
-            this.btn_de.Location = new System.Drawing.Point(521, 314);
+            this.btn_de.Location = new System.Drawing.Point(521, 299);
             this.btn_de.Margin = new System.Windows.Forms.Padding(2);
             this.btn_de.Name = "btn_de";
-            this.btn_de.Size = new System.Drawing.Size(70, 19);
+            this.btn_de.Size = new System.Drawing.Size(70, 34);
             this.btn_de.TabIndex = 22;
             this.btn_de.Text = "Deutsch";
             this.btn_de.UseVisualStyleBackColor = true;
@@ -122,10 +122,10 @@
             this.btn_en.FlatAppearance.BorderSize = 0;
             this.btn_en.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_en.Image = ((System.Drawing.Image)(resources.GetObject("btn_en.Image")));
-            this.btn_en.Location = new System.Drawing.Point(521, 266);
+            this.btn_en.Location = new System.Drawing.Point(521, 251);
             this.btn_en.Margin = new System.Windows.Forms.Padding(2);
             this.btn_en.Name = "btn_en";
-            this.btn_en.Size = new System.Drawing.Size(70, 19);
+            this.btn_en.Size = new System.Drawing.Size(70, 34);
             this.btn_en.TabIndex = 21;
             this.btn_en.Text = "English";
             this.btn_en.UseVisualStyleBackColor = true;
@@ -136,10 +136,10 @@
             this.btn_es.FlatAppearance.BorderSize = 0;
             this.btn_es.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_es.Image = ((System.Drawing.Image)(resources.GetObject("btn_es.Image")));
-            this.btn_es.Location = new System.Drawing.Point(521, 243);
+            this.btn_es.Location = new System.Drawing.Point(521, 232);
             this.btn_es.Margin = new System.Windows.Forms.Padding(2);
             this.btn_es.Name = "btn_es";
-            this.btn_es.Size = new System.Drawing.Size(70, 19);
+            this.btn_es.Size = new System.Drawing.Size(70, 25);
             this.btn_es.TabIndex = 20;
             this.btn_es.Text = "Español";
             this.btn_es.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@
             this.lbl_title.ForeColor = System.Drawing.Color.White;
             this.lbl_title.Location = new System.Drawing.Point(12, 9);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(172, 37);
+            this.lbl_title.Size = new System.Drawing.Size(215, 46);
             this.lbl_title.TabIndex = 25;
             this.lbl_title.Text = "Iniciar Sesión";
             // 
@@ -163,7 +163,7 @@
             this.lbl_user.ForeColor = System.Drawing.Color.Black;
             this.lbl_user.Location = new System.Drawing.Point(189, 115);
             this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(47, 13);
+            this.lbl_user.Size = new System.Drawing.Size(56, 19);
             this.lbl_user.TabIndex = 26;
             this.lbl_user.Text = "Usuario";
             // 
@@ -172,15 +172,15 @@
             this.lbl_pass.AutoSize = true;
             this.lbl_pass.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pass.ForeColor = System.Drawing.Color.Black;
-            this.lbl_pass.Location = new System.Drawing.Point(189, 138);
+            this.lbl_pass.Location = new System.Drawing.Point(173, 138);
             this.lbl_pass.Name = "lbl_pass";
-            this.lbl_pass.Size = new System.Drawing.Size(66, 13);
+            this.lbl_pass.Size = new System.Drawing.Size(79, 19);
             this.lbl_pass.TabIndex = 27;
             this.lbl_pass.Text = "Contraseña";
             // 
             // log_in
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(600, 366);

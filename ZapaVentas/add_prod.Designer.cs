@@ -223,7 +223,6 @@
             this.Name = "add_prod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Añadir Producto";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.add_prod_FormClosed);
             this.Load += new System.EventHandler(this.add_prod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();
             this.pnl_cantidad_envasado.ResumeLayout(false);

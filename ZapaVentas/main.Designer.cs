@@ -46,13 +46,14 @@
             // 
             this.btn_ventas.BackColor = System.Drawing.Color.Transparent;
             this.btn_ventas.BackgroundImage = global::ZapaVentas.Properties.Resources.button2;
+            this.btn_ventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_ventas.FlatAppearance.BorderSize = 0;
             this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ventas.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ventas.Location = new System.Drawing.Point(268, 15);
-            this.btn_ventas.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ventas.Location = new System.Drawing.Point(357, 18);
+            this.btn_ventas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ventas.Name = "btn_ventas";
-            this.btn_ventas.Size = new System.Drawing.Size(136, 67);
+            this.btn_ventas.Size = new System.Drawing.Size(181, 82);
             this.btn_ventas.TabIndex = 1;
             this.btn_ventas.Text = "Acerca";
             this.btn_ventas.UseVisualStyleBackColor = false;
@@ -65,10 +66,10 @@
             this.btn_productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_productos.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btn_productos.Image = global::ZapaVentas.Properties.Resources.button2;
-            this.btn_productos.Location = new System.Drawing.Point(409, 15);
-            this.btn_productos.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_productos.Location = new System.Drawing.Point(545, 18);
+            this.btn_productos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_productos.Name = "btn_productos";
-            this.btn_productos.Size = new System.Drawing.Size(136, 67);
+            this.btn_productos.Size = new System.Drawing.Size(181, 82);
             this.btn_productos.TabIndex = 2;
             this.btn_productos.Text = "Productos";
             this.btn_productos.UseVisualStyleBackColor = false;
@@ -81,10 +82,10 @@
             this.btn_conteo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_conteo.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btn_conteo.Image = global::ZapaVentas.Properties.Resources.button2;
-            this.btn_conteo.Location = new System.Drawing.Point(549, 15);
-            this.btn_conteo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_conteo.Location = new System.Drawing.Point(732, 18);
+            this.btn_conteo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_conteo.Name = "btn_conteo";
-            this.btn_conteo.Size = new System.Drawing.Size(136, 67);
+            this.btn_conteo.Size = new System.Drawing.Size(181, 82);
             this.btn_conteo.TabIndex = 3;
             this.btn_conteo.Text = "Conteo";
             this.btn_conteo.UseVisualStyleBackColor = false;
@@ -97,10 +98,10 @@
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btn_exit.Image = global::ZapaVentas.Properties.Resources.button3;
-            this.btn_exit.Location = new System.Drawing.Point(752, 15);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_exit.Location = new System.Drawing.Point(1003, 18);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(112, 67);
+            this.btn_exit.Size = new System.Drawing.Size(149, 82);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "Cerrar sesión";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -109,14 +110,15 @@
             // btn_config
             // 
             this.btn_config.BackColor = System.Drawing.Color.Transparent;
+            this.btn_config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_config.FlatAppearance.BorderSize = 0;
             this.btn_config.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_config.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_config.Image = global::ZapaVentas.Properties.Resources.button4;
-            this.btn_config.Location = new System.Drawing.Point(689, 15);
-            this.btn_config.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_config.Location = new System.Drawing.Point(919, 18);
+            this.btn_config.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_config.Name = "btn_config";
-            this.btn_config.Size = new System.Drawing.Size(58, 67);
+            this.btn_config.Size = new System.Drawing.Size(77, 82);
             this.btn_config.TabIndex = 5;
             this.btn_config.Text = "Configuración";
             this.btn_config.UseVisualStyleBackColor = false;
@@ -129,10 +131,10 @@
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.btn_add.Image = global::ZapaVentas.Properties.Resources.button5;
-            this.btn_add.Location = new System.Drawing.Point(21, 113);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_add.Location = new System.Drawing.Point(28, 139);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(154, 44);
+            this.btn_add.Size = new System.Drawing.Size(205, 54);
             this.btn_add.TabIndex = 7;
             this.btn_add.Text = "Agregar producto";
             this.btn_add.UseVisualStyleBackColor = false;
@@ -148,13 +150,13 @@
             this.dgv_compra_actual.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(209)))), ((int)(((byte)(224)))));
             this.dgv_compra_actual.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_compra_actual.Enabled = false;
-            this.dgv_compra_actual.Location = new System.Drawing.Point(21, 162);
-            this.dgv_compra_actual.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_compra_actual.Location = new System.Drawing.Point(28, 199);
+            this.dgv_compra_actual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_compra_actual.Name = "dgv_compra_actual";
             this.dgv_compra_actual.ReadOnly = true;
             this.dgv_compra_actual.RowHeadersWidth = 51;
             this.dgv_compra_actual.RowTemplate.Height = 24;
-            this.dgv_compra_actual.Size = new System.Drawing.Size(842, 353);
+            this.dgv_compra_actual.Size = new System.Drawing.Size(1123, 434);
             this.dgv_compra_actual.TabIndex = 6;
             // 
             // tick
@@ -168,10 +170,9 @@
             this.lbl_total.AutoSize = true;
             this.lbl_total.BackColor = System.Drawing.Color.Transparent;
             this.lbl_total.Font = new System.Drawing.Font("Segoe UI Symbol", 20F);
-            this.lbl_total.Location = new System.Drawing.Point(682, 552);
-            this.lbl_total.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_total.Location = new System.Drawing.Point(909, 679);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(83, 37);
+            this.lbl_total.Size = new System.Drawing.Size(102, 46);
             this.lbl_total.TabIndex = 8;
             this.lbl_total.Text = "Total:";
             // 
@@ -182,10 +183,10 @@
             this.btn_cobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cobrar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cobrar.Image = global::ZapaVentas.Properties.Resources.button6;
-            this.btn_cobrar.Location = new System.Drawing.Point(554, 552);
-            this.btn_cobrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cobrar.Location = new System.Drawing.Point(739, 679);
+            this.btn_cobrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cobrar.Name = "btn_cobrar";
-            this.btn_cobrar.Size = new System.Drawing.Size(118, 43);
+            this.btn_cobrar.Size = new System.Drawing.Size(157, 53);
             this.btn_cobrar.TabIndex = 9;
             this.btn_cobrar.Text = "Cobrar (F12):";
             this.btn_cobrar.UseVisualStyleBackColor = false;
@@ -193,11 +194,11 @@
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ZapaVentas.Properties.Resources.MainBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 609);
+            this.ClientSize = new System.Drawing.Size(1181, 750);
             this.Controls.Add(this.btn_cobrar);
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.btn_add);
@@ -209,7 +210,7 @@
             this.Controls.Add(this.btn_ventas);
             this.DoubleBuffered = true;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ZapaVentas";
