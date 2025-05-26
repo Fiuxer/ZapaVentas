@@ -12,6 +12,8 @@ using MongoDB.Bson;
 using System.Globalization;
 using System.Threading;
 using static ZapaVentas.Program;
+using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 
 namespace ZapaVentas
 {
@@ -32,41 +34,44 @@ namespace ZapaVentas
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            // Conexión a la base de datos
-            var connectionString = "mongodb://localhost:27017";
-            var client = new MongoClient(connectionString);
-            var database = client.GetDatabase(Global.databaseName);
-            var collection = database.GetCollection<user>("usuarios");
-
-            // Buscar usuarios en los que el nombre y el usuario coincidan a
-            // los que el vendedor escribió con el uso de funciones lambda
-            var filter = Builders<user>.Filter.Eq("usr", tbx_usr.Text) &
-                            Builders<user>.Filter.Eq("pwd", tbx_pwd.Text);
-
-            // Si el usuario existe, se guarda en la variable usuarios
-            var usuarios = collection.Find(filter).FirstOrDefault();
-
-            // Si el usuario si existe, entra a la sección de ventas
-            if (usuarios != null)
+            string connectionString = "server=localhost;user=root;password=;database=zapaventas";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                Global.usr = tbx_usr.Text;
-                Global.privilege = usuarios.privilege;
-                Form main = new main();
-                main.Show();
-                this.Hide();
-            } else
-            {
-                // Si el usuario no existe, muestra un mensaje de datos incorrectos
-                MessageBox.Show("Usuario o contraseña incorrectos");
-                tbx_usr.Clear();
-                tbx_pwd.Clear();
-                tbx_usr.Focus();
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT * FROM usuarios WHERE usr = @usr AND pwd = @pwd";
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@usr", tbx_usr.Text);
+                    cmd.Parameters.AddWithValue("@pwd", tbx_pwd.Text);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Global.usr = (reader["usr"]).ToString();
+                            Global.privilege = Convert.ToInt16(reader["privilege"]);
+                            Form main = new main();
+                            main.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Contraseña o usuario incorrectos");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
 
         private void log_in_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit(); // Si la aplicación se cierra, acaba con el proceso para evitar consumo de recursos.
+            Application.Exit();
         }
 
         private void log_in_Load(object sender, EventArgs e)
