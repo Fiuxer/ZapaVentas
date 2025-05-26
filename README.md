@@ -4,17 +4,18 @@ _Donde cada venta cuenta_
 ## PROPOSITO
 
 El propósito de la aplicación de ZapaVentas es el crear una aplicación de Punto de Venta, la cuál cumpla con todas las necesidades de una aplicación de punto de venta promedio. Actualmente con esta versión (a1.93.1). Se cuenta con las siguientes funciones:
-- Inicio de sesión
-- Ventana de cobro
-- Ventana para añadir / editar productos
-- Conexión a base de datos
-- Ventana de cobro
-- GUI integrado
-- Cobro en efectivo / tarjeta
-- Configuración de administrador
-- Cobro a granel y unitario
-- Acerca
-- Recuento de ventas
+
+- Inicio de sesión 🔥
+- Ventana de cobro ❌
+- Ventana para añadir / editar productos ❌
+- Conexión a base de datos ❌
+- Ventana de cobro ❌
+- GUI integrado ❌
+- Cobro en efectivo / tarjeta ❌
+- Configuración de administrador ❌
+- Cobro a granel y unitario ❌
+- Acerca ❌
+- Recuento de ventas ❌
 
 ## Atención
 
@@ -22,15 +23,15 @@ Esta aplicación es una creada para un proyecto final escolar. No cuenta con nin
 
 ## Información para el uso
 
-Para poder usar la aplicación se requieren ciertos prerrequisitos como el contar con la aplicación de **MongoDB Compass**. Esta permite tener la base de datos que se va a utilizar. Adentro de la aplicación, hacer una conexión y agregar una base con el nombre de "ZapaVentas".
+Para poder usar la aplicación se requieren ciertos prerrequisitos como el contar con la aplicación de **XAMPP**. Esta permite tener la base de datos que se va a utilizar. Adentro de la aplicación, hacer una base con el nombre de "zapaventas".
 
 Después hacer 3 colecciones con los siguientes nombres:
-- Productos
-- Usuarios
-- Ventas
+- productos
+- usuarios
+- ventas
 
 La aplicación se puede encargar del resto.
 
 ## Extras
 
-Dentro del programa hay una carpeta llamada **Example database**. En esta está un ejemplo de una base de datos con pocos datos pero funcional. Solo hay que meterla en mongodb con los **nombres correctos**.
+Se planea agregar una base de datos muestra pero por ahora no está
