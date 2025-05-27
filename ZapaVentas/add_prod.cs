@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MySql.Data.MySqlClient;
 using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
@@ -39,30 +40,28 @@ namespace ZapaVentas
 
         private void reload_dgv()
         {
-            // Conectar a la base de datos
-            var connectionString = "mongodb://localhost:27017";
-            var client = new MongoClient(connectionString);
-            var database = client.GetDatabase(Global.databaseName);
-            var collection = database.GetCollection<Producto>("productos");
-
-            // Agarrar el nombre del producto
-            // .Trim() elimina espacios al principio y al final
-            string prod_name = tbx_nombre.Text.Trim();
-
-            /* 
-             * Buscar el producto en una base de datos usando una función lambda
-             * 
-             * Una función lambda es un tipo de función "anónima"
-             * 
-             * Con esta se pueden hacer operaciones complejas como la comprobación de
-             * un nombre en una base de datos sin la necesidad de hacer un filtro
-             * completo.
-             */
-            var productos = collection.Find(u => u.nombre.Contains(prod_name)).ToList();
-
-
-            //Mostrar los productos en el DataGridView
-            dgv_productos.DataSource = productos;
+            // Conectar a la base de datos de mySQL
+            string connectionString = "server=localhost;user=root;password=;database=zapaventas";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM productos";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        dgv_productos.DataSource = dataTable;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                    return;
+                }
+            }
         }
 
         private void dgv_productos_CellContentClick(object sender, DataGridViewCellEventArgs e)

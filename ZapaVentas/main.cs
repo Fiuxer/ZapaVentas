@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MySql.Data.MySqlClient;
 using ZapaVentas.Properties;
 using static ZapaVentas.Program;
 
@@ -82,39 +83,47 @@ namespace ZapaVentas
 
         private void tick_Tick(object sender, EventArgs e)
         {
-            //Conexión a la base de datos
-            string connectionString = "mongodb://localhost:27017";
-            MongoClient client = new MongoClient(connectionString);
-            var database = client.GetDatabase(Global.databaseName);
-            var collection = database.GetCollection<Producto>("productos");
-            Global.precioTotal = 0;
-
-            // Por cada producto en la lista de productos
-            foreach (Producto producto in Global.productos)
+            // Conexión a la base de datos
+            string connectionString = "server=localhost;user=root;password=;database=zapaventas";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                // Busca el producto en la base de datos
-                var filter = Builders<Producto>.Filter.Eq(u => u.nombre, producto.nombre);
+                conn.Open();
 
-                var result = collection.Find(filter).FirstOrDefault();
+                Global.precioTotal = 0;
 
-                // Si el producto existe, actualiza el precio
-                if (result != null)
+                foreach (Producto producto in Global.productos)
                 {
-                    producto.precio = result.precio * producto.inv;
-                    Global.precioTotal += producto.precio;
+                    string query = "SELECT precio FROM productos WHERE nombre = @nombre LIMIT 1";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@nombre", producto.nombre);
+
+                        decimal precioDB = 0;
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                precioDB = reader.GetDecimal("precio");
+                            }
+                        } //✅
+
+                        producto.precio = (double)(precioDB * producto.inv);
+                        Global.precioTotal += producto.precio;
+                    }
                 }
 
+                // Mostrar en DataGridView
+                dgv_compra_actual.DataSource = null;
+                dgv_compra_actual.DataSource = Global.productos;
+                dgv_compra_actual.Columns["id"].Visible = false;
+                dgv_compra_actual.Columns["granel"].Visible = false;
+                dgv_compra_actual.Columns["inv"].Name = "Cantidad";
+
+                // Mostrar el total en pantalla
+                lbl_total.Text = "$" + Global.precioTotal.ToString("0.00");
             }
-
-            // Elegir valores para mostrar
-            dgv_compra_actual.DataSource = null;
-            dgv_compra_actual.DataSource = Global.productos;
-            dgv_compra_actual.Columns["id"].Visible = false;
-            dgv_compra_actual.Columns["granel"].Visible = false;
-            dgv_compra_actual.Columns["inv"].Name = "Cantidad";
-
-            // Mostrar el total en pantalla
-            lbl_total.Text = "$" + Global.precioTotal.ToString("0.00");
         }
 
         private void btn_cobrar_Click(object sender, EventArgs e)
